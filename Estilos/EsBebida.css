@@ -32,7 +32,7 @@ body{
 }
 .swiper-slide{
     width: 300px;
-    height: 500px;
+    height: 425px;
     background-color: orange;
     box-shadow: 0 0 20px white;
     padding: 40px;
@@ -50,22 +50,22 @@ body{
 }
 
 .bebida-txt span{
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
     font-weight: bold;
 }
 
 .bebida-txt h3{
-    font-size: 14px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
 
 
 .bebida-txt p{
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
-}
+} 
 
 .bebida-img{
     flex-basis: 50%;
