@@ -13,7 +13,7 @@ class CrudMesero extends Conexion{
     $statement = parent::getConexion()->prepare($sql);
     $statement->bindParam(1,$Mesero->id_empleado);
     $statement->bindParam(2,$Mesero->contra);
-    $statement->execute();
+
 
     if($statement->execute()){
         echo"SE REALIZO CON EXITO EL REGISTRO";
