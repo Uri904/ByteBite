@@ -65,7 +65,7 @@ body{
 .bebida-txt p{
     font-size: 16px;
     color: rgb(255, 255, 255);
-}
+} 
 
 .bebida-img{
     flex-basis: 50%;
