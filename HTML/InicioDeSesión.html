@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InicioDeSesión</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="../Estilos/EsInicioDeSesión.css">
+    <link rel="stylesheet" href="../Estilos/EsVentaEmergente.css">
+    <link rel="shortcut icon" href="../Imagenes/Logo_ByteBite.png">
+</head>
+<body>
+    
+ <img src="../Imagenes/Logo_ByteBite.png" alt="" style="display: block; margin: 0% auto;">   
+   <header><h1>INICIO DE <br> SESIÓN</h1></header>
+   <form action="../Php/ReInicioSesion.php" method="post" >
+    <p id="p1">
+<label for="">Usuario</label> <br>
+<input type="email" placeholder="Alguien@.com" id="email" name="us">
+   </p>
+   <p id="p2">
+    <label for="">Contraseña</label> <br>
+    <input type="text" placeholder="****" id="Contraseña" name="pass">
+       </p>   
+       <p id="p3">
+        <input type="submit" placeholder="INICIAR Sesion" >
+       </p>
+   </form>
+  
+   
+   <div class="agregar">
+    <div class="contenedor">
+        <article>
+          <button id="btn-abrir-popup" class="btn-abrir-popup">Modo Administrador</button>
+        </article>
+
+          <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+              <a href="../Páginas/InicioDeSesión.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+              <h3>Crear Nueva Cuenta</h3>
+              <h4>Acceso Requerido</h4>
+
+              <!--Agregar link para mandar registro a PHP-->
+              <form action="">
+                <div class="contenedor-inputs">
+                  <input type="password" placeholder="contraseña">
+                </div>
+              <input type="submit" class="btn-submit" value="acceder">
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <script src="../JS/popup.js"></script>
+   </div>
+</body>
+</html>

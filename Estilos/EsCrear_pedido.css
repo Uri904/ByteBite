@@ -1,0 +1,47 @@
+body{
+    background-image: url(../Imagenes/Fondo_Pagina.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    border-radius: 50%;
+    border: 5px solid saddlebrown;
+}
+
+.navbar{
+    float: right;
+    display: flex;
+    align-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(255, 150, 0);
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size:40px;
+}
+
+.enlacesp{
+    cursor: pointer;
+    transition: 1s; 
+}
+
+.enlacesp:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.enlacesb{
+    cursor: pointer;
+    transition: 1s; 
+}
+
+.enlacesb:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}

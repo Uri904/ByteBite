@@ -1,0 +1,65 @@
+body{
+    background-image: url(../Imagenes/Fondo_Pagina.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal{
+    justify-content: space-between;
+    display: flex;
+}
+
+.objetivo{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.mision{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.vision{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.contacto{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid saddlebrown;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+.boton{
+    justify-content: center;
+    display: flex;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+
+
+

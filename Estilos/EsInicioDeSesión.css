@@ -1,0 +1,46 @@
+body{
+    background-image: url(../Imagenes/Fondo_Pagina.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    height: 250px;
+    width: 350px;
+    border-radius: 50%;
+    border: 5px solid saddlebrown;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size:40px;
+}
+
+#p1{
+    text-align: center;   
+}
+
+#email{
+    background-color: chocolate;
+}
+
+#p2{
+    text-align: center;
+}
+
+#Contraseña{
+    background-color: chocolate;
+}
+
+.boton{
+    background-color: brown;
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+#p3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
