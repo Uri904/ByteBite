@@ -1,5 +1,5 @@
 body{
-    background-image: url(../Imagenes/Fondo_Pagina.jpeg);
+    background-image: url(../IMG/Fondo_Pagina.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -7,7 +7,7 @@ body{
     font-size: 14px;
     margin: 0;
     padding: 0;
-} 
+}
 
 .logo{
     border-radius: 50%;
