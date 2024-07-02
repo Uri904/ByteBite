@@ -7,13 +7,13 @@ class CrudMesero extends Conexion{
         parent::__construct();
     }
     function readMesero($Mesero){
-        $sql = "INSERT INTO Mesero(id_mesero,contra)
+        $sql = "INSERT INTO Mesero(id_empleado,contra)
         VALUES(?,?)"; 
    
     $statement = parent::getConexion()->prepare($sql);
     $statement->bindParam(1,$Mesero->id_empleado);
-    $statement->bindParam(2,$Mesero->id_mesero);
-   
+    $statement->bindParam(2,$Mesero->contra);
+    $statement->execute();
 
     if($statement->execute()){
         echo"SE REALIZO CON EXITO EL REGISTRO";
