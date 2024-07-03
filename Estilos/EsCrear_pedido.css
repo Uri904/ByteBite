@@ -31,7 +31,7 @@ body{
 }
 
 .nav-link{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -84,19 +84,27 @@ body{
 .enlacesp{
     cursor: pointer;
     transition: 1s; 
+    background-color: #ffcc66;
+    width: 25%;
+    border-radius: 35px;
 }
 
 .enlacesp:hover{
+    box-shadow: 10px 10px 0px 0px #df1a1a, 20px 20px #ce3a3a, 30px 30px 14px #d85e5e;
     transform: scale(1.1);
     transition: 1s;
 }
 
 .enlacesb{
     cursor: pointer;
-    transition: 1s; 
+    transition: 1s;
+    background-color: #ffcc66;
+    width: 25%; 
+    border-radius: 35px;
 }
 
 .enlacesb:hover{
+    box-shadow: 10px 10px 0px 0px #df1a1a, 20px 20px #ce3a3a, 30px 30px 14px #d85e5e;
     transform: scale(1.1);
     transition: 1s;
 }
