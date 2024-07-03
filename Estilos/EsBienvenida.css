@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-image: url(../IMG/Fondo_Pagina.jpeg);
     background-attachment: fixed;
@@ -12,9 +16,22 @@ img{
     border: 5px solid saddlebrown;
 }
 
-.logo{
-    border-radius: 50%;
-    border: 5px solid saddlebrown;
+.header{
+    background-color: #ffcc66;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -23,6 +40,40 @@ img{
     align-content: space-between;
     border-radius: 10px;
     background-color: rgb(255, 150, 0);
+}
+
+.nav-link{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 70px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin:  0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.nav-menu-link{
+    padding:  8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+    background-color: #ff9600;
+    transition: 0.5s;
 }
 
 .Principal{
@@ -55,6 +106,3 @@ button{
     border: 10px;
     padding: 15px 32px;
 }
-
-
-
