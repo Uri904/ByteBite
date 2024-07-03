@@ -7,12 +7,14 @@ class CrudMesero extends Conexion{
         parent::__construct();
     }
     function readMesero($Mesero){
-        $sql = "INSERT INTO Mesero(id_empleado,contra)
-        VALUES(?,?)"; 
+        $sql = "INSERT INTO Mesero(id_empleado,correo,contra)
+        VALUES(?,?,?)"; 
    
     $statement = parent::getConexion()->prepare($sql);
     $statement->bindParam(1,$Mesero->id_empleado);
-    $statement->bindParam(2,$Mesero->contra);
+    $statement->bindParam(2,$Mesero->correo);
+    $statement->bindParam(3,$Mesero->contra);
+   
 
 
     if($statement->execute()){
@@ -24,7 +26,7 @@ class CrudMesero extends Conexion{
        
  
 }
-$objM=new mesero(1,1,'Holaquehace');
-$crud= new CrudMesero();
-$crud->readMesero($objM); 
+//$objM=new mesero(1,1,'Holaquehace','elbriansr@gmail.com');
+//$crud= new CrudMesero();
+//$crud->readMesero($objM); 
 ?>

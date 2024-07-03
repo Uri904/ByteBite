@@ -2,13 +2,15 @@
 
 class mesero{
     public $id_empleado;
-    public $id_mesero;
     public $contra;
+    public $correo;
 
-    function __construct($id_empleado,$id_mesero,$contra){
+    function __construct($id_empleado,$correo,$contra){
         $this->id_empleado=$id_empleado;
-        $this->id_mesero=$id_mesero;
+        $this->correo=$correo;
         $this->contra=$contra;
+        
+
         echo "<br>Atributos inicializados ...";
 
 

@@ -23,7 +23,7 @@
     </button>
     </a>';
 
-    }else{
+    }else {
         header("Location:../HTML/bienvenida_admin.html");
     }
 

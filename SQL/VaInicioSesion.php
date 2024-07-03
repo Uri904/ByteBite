@@ -8,10 +8,13 @@
 </head>
 <body >
 <?php
+include_once('./CrudMesero.php');
+include_once('./mesero.php');
+$id=$_POST["id"];
 $usuario=$_POST["correo"];
 $contra=$_POST["contras"];
 
-if(empty($usuario) || empty($contra)){
+if(empty($usuario) || empty($contra) ||empty($id)){
     echo"<h1>ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE</h1> <br>"; 
 
     echo'<a href="../HTML/InicioDeSesión.html" >
@@ -20,7 +23,12 @@ if(empty($usuario) || empty($contra)){
     </button>
     </a>';
 }else{
-    header("Location:../HTML/Bienvenida.html");
+
+
+$objM=new mesero($id,$usuario,$contra);
+$crud= new CrudMesero();
+$crud->readMesero($objM); 
+header("Location:../HTML/Bienvenida.html");
     exit();
 }
 ?>

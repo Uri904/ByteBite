@@ -20,7 +20,12 @@
   </header>
 
   <div class="formulario">
-    <form action="../PHP/VaInicioSesion.php" method="post">
+    <form action="../SQL/VaInicioSesion.php" method="post" enctype="multipart/form-data">
+      <div class="id">
+        <label for="">ID de empleado</label> <br>
+        <input type="number" name="id">
+      </div>
+
       <div class="email">
         <label for="">Usuario</label> <br>
         <input type="email" placeholder="Alguien@.com" name="correo">
