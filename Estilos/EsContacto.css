@@ -5,41 +5,63 @@ body{
     background-size: cover;
 }
 
-.logo{
-    border-radius: 50%;
-    border: 5px solid saddlebrown;
-}
-
-.navbar{
-    float: right;
-    display: flex;
-    align-content: space-between;
-    border-radius: 10px;
-    background-color: rgb(255, 150, 0);
-}
-
-.contacto{
+.principal{
     justify-content: space-between;
     display: flex;
-    flex-direction: column;
+}
+
+.Brian{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+
+.Daniel{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.Jatziri{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.Kevin{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid rgb(0, 0, 0);
+    width: 20%;
+}
+
+.lider{
+    display: flex;
+    justify-content: center;
+}
+
+.Uri{
+    border-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: 5px solid black;
+    width: 20%;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid saddlebrown;
 }
 
 img{
     width: 50px;
     height: 50px;
 }
-
-td{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size:15px;
-}
-
-table{
-    border: 2px solid black;
-
-}
-
 .boton{
     justify-content: center;
     display: flex;
@@ -50,4 +72,3 @@ button{
     padding: 15px 32px;
     text-align: center;
 }
-
