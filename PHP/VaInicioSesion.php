@@ -21,6 +21,7 @@ if(empty($usuario) || empty($contra)){
     </a>';
 }else{
     header("Location:../HTML/Bienvenida.html");
+    exit();
 }
 ?>
 </body>
