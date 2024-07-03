@@ -31,6 +31,6 @@ class CrudEmpleado extends Conexion{
 
     
 }
-$objE= new empleado(1,'SERRESIETE','Sepulveda','Romero','San Roberto','Manzana 24','La Trinidad',55614,1700,5566338588);
+$objE= new empleado(2,'SERRESIETE','Sepulveda','Romero','San Roberto','Manzana 24','La Trinidad',55614,1700,5566338588);
 $crud= new CrudEmpleado();
 $crud->readEmpleado($objE);   
