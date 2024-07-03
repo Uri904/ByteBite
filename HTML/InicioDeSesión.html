@@ -12,30 +12,36 @@
 </head>
 <body>
     
+  <br>
+
  <img src="../IMG/Logo_ByteBite.png" alt="logo" style="display: block; margin: 0% auto;">   
-   <header><h1>INICIO DE <br> SESIÓN</h1></header>
-   <form action="../PHP/VaInicioSesion.php" method="post" >
-    <p id="p1">
-<label for="">Usuario</label> <br>
-<input type="email" placeholder="Alguien@.com" id="email" name="us">
-   </p>
-   <p id="p2">
-    <label for="">Contraseña</label> <br>
-    <input type="text" placeholder="****" id="Contraseña" name="pass">
-       </p>   
-       <br><br>
+   <header>
+    <h1>INICIO DE <br> SESIÓN</h1>
+  </header>
 
-       
-       <input type="submit" class="in" value="Iniciar Sesion" >
-      
+  <div class="formulario">
+    <form action="../PHP/VaInicioSesion.php">
+      <div class="email">
+        <label for="">Usuario</label> <br>
+        <input type="email" placeholder="Alguien@.com">
+      </div>
 
-    
+      <div class="password">
+        <label for="">Contraseña</label> <br>
+        <input type="text" placeholder="****">
+      </div>
 
-       </p>
-   </form>
-  
-   
-   <div class="agregar">
+      <div class="envio_y_limpiar">
+        <br>
+        <input type="submit" value="Iniciar Sesión" class="envio" >
+        <br><br>
+        <input type="reset" value="Limpiar" class="limpiar">
+      </div>
+    </form>
+  </div>
+
+
+  <div class="agregar">
     <div class="contenedor">
         <article>
           <button id="btn-abrir-popup" class="btn-abrir-popup">Modo Administrador</button>
