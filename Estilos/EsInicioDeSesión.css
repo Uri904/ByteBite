@@ -100,7 +100,7 @@ label{
 	transition: 0.5s;
 }
 
-.inputBox input:valid ~ span,
+.inputBox input:not(:placeholder-shown) ~ span,
 .inputBox input:focus ~ span {
 	color: #ffa200;
 	transform: translateX(10px) translateY(-7px);
@@ -112,14 +112,14 @@ label{
 	letter-spacing: 0.2em;
 }
 
-.inputBox:nth-child(1) input:valid ~ span,
+.inputBox:nth-child(1) input:not(:placeholder-shown) ~ span,
 .inputBox:nth-child(1) input:focus ~ span {
 	background: #ff8400;
 	color: #ffe4b7;
 	border-radius: 2px;
 }
 
-.inputBox input:valid,
+.inputBox input:not(:placeholder-shown),
 .inputBox input:focus{
 	border: 1px solid #ff8400;
 }
