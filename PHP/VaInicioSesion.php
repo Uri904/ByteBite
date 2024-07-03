@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../Estilos/ValidacionInicioSesion.css">
 </head>
 <body >
 <?php
@@ -11,7 +12,13 @@ $usuario=$_POST["us"];
 $contra=$_POST["pass"];
 
 if(empty($usuario) || empty($contra)){
-    echo"ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE";
+    echo"<h1>ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE</h1> <br>"; 
+
+    echo'<a href="../HTML/InicioDeSesión.html" >
+    <button>
+    REGRESAR
+    </button>
+    </a>';
 }else{
     header("Location:../HTML/Bienvenida.html");
 }
