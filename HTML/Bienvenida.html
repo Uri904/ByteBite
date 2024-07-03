@@ -12,10 +12,9 @@
 
 <body>
   <header class="header">
-
     <div class="encabezado">
         <nav class="nav">
-          <a href="../IMG/Logo_ByteBite.png" class="logo nav-link">ByteBite</a>
+          <a href="./Bienvenida.html" class="logo nav-link">ByteBite</a>
           <ul class="nav-menu">
             <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
             <li class="nav-menu-item"><a href="./" class="nav-menu-link nav-link">Ayuda</a></li>
@@ -23,7 +22,7 @@
         </nav>
     </div>
   </header>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
       <div class="Principal">
 
@@ -39,26 +38,26 @@
           </div>
         </div>
 
-        <img src="../IMG/Logo_ByteBite.png" alt="img" class="img_bienvenida" height="180px" width="250px">
+        <img src="../IMG/Logo_ByteBite.png" alt="img" class="img_bienvenida" height="250px" width="250px">
 
       </div>
 
-      <br><br>
+      <br><br><br><br><br><br>
 
     <div class="botones">
  
-      <button>
-        <a href="./QuienesSomos.html">¿Quiénes Somos?</a>
-      </button>
+      <form action="./QuienesSomos.html">
+      <input type="submit" class="btn-submit" value="¿Quienes somos?" >
+    </form>
 
-      <button>
-        <a href="./Crear_pedido.html">Crear Pedidos</a>
-      </button>
-  
-      <button>
-        <a href="#">Ver Pedidos</a>
-      </button>
-  
+    <form action="./Crear_pedido.html" method="post">
+    <input type="submit" class="btn-submit" value="Crear Pedido" >
+  </form>
+
+  <form action="./Pedidos.html" method="post">
+  <input type="submit" class="btn-submit" value="Ver pedidos" >
+</form>
+
     </div>
 
 </body>

@@ -9,13 +9,6 @@ body{
     background-size: cover;
 }
 
-img{
-    height: 150px;
-    width: 250px;
-    border-radius: 50%;
-    border: 5px solid saddlebrown;
-}
-
 .header{
     background-color: #ffcc66;
     height: 80px;
@@ -32,14 +25,6 @@ img{
 
     max-width: 992px;
     margin: 0 auto;
-}
-
-.navbar{
-    float: right;
-    display: flex;
-    align-content: space-between;
-    border-radius: 10px;
-    background-color: rgb(255, 150, 0);
 }
 
 .nav-link{
@@ -87,14 +72,14 @@ img{
     float: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border: 5px solid saddlebrown;
+    border: 3px solid #ff0000;
 }
 
 .img_bienvenida{
     float: right;
     display: flex;
-    border-radius: 50%;
-    border: 5px solid saddlebrown;
+    border-radius: 15%;
+    border: 3px solid #ff0000;
 }
 
 .botones{
@@ -106,3 +91,24 @@ button{
     border: 10px;
     padding: 15px 32px;
 }
+.btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #000000;
+	background: #ffcc66;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-submit:hover {
+	background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
