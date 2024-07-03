@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../IMG/Fondo_Pagina.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    justify-content: center;
+    text-align: center;
+}
+.botones{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+
+.btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #000000;
+	background: #ffcc66;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-submit:hover {
+	background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
+}
