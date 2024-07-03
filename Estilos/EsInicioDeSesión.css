@@ -17,37 +17,24 @@ h1{
     font-size:40px;
 }
 
-#p1{
-    text-align: center;   
-}
-
-#email{
-    background-color: chocolate;
-}
-
-#p2{
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
-
-#Contraseña{
-    background-color: chocolate;
+input{
+    background-color: white;
 }
 
-.boton{
-    background-color: brown;
-    border: 10px;
-    padding: 15px 32px;
-    text-align: center;
-}
-
-#p3{
-    
+label{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.in{
-    display: flex;
-    width: 100%;
-    
+.envio{
+    background-color: orange;
+}
+.limpiar{  
+    background-color: orange;
 }
