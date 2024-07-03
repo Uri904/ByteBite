@@ -9,7 +9,7 @@
 <body>
     <?php
 
-    $contra=$_POST["contra"];
+    $contra=$_POST=["contra"];
 
     if(empty($contra)){
         echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1>";
