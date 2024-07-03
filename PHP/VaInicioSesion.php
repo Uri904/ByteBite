@@ -8,8 +8,8 @@
 </head>
 <body >
 <?php
-$usuario=$_POST["us"];
-$contra=$_POST["pass"];
+$usuario=$_POST["correo"];
+$contra=$_POST["contras"];
 
 if(empty($usuario) || empty($contra)){
     echo"<h1>ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE</h1> <br>"; 
