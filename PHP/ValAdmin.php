@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O</title>
-   
+    <link rel="stylesheet" href="../Estilos/ValAdmin.css">
 </head>
+
 <body>
+<br>
+<div class="validacion">
     <?php
 
     $contra = $_POST["contra"];
@@ -25,5 +28,8 @@
     }
 
     ?>
+
+</div>
+
 </body>
 </html>
