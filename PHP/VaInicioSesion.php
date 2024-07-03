@@ -8,8 +8,6 @@
 </head>
 <body >
 <?php
-include_once('./CrudMesero.php');
-include_once('./mesero.php');
 $id=$_POST["id"];
 $usuario=$_POST["correo"];
 $contra=$_POST["contras"];
@@ -25,9 +23,7 @@ if(empty($usuario) || empty($contra) ||empty($id)){
 }else{
 
 
-$objM=new mesero($id,$usuario,$contra);
-$crud= new CrudMesero();
-$crud->readMesero($objM); 
+
 header("Location:../HTML/Bienvenida.html");
     exit();
 }
