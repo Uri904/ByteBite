@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+ 
 .principal{
     justify-content: space-between;
     display: flex;
@@ -49,6 +49,7 @@ img{
     width: 50px;
     height: 50px;
 }
+
 .boton{
     justify-content: center;
     display: flex;
