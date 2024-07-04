@@ -3,40 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver Pedido</title>
-    <link rel="stylesheet" href="../Estilos/EsVerPedido.css">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../Estilos/EsResumenPedido.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
 </head>
 
 <body>
-        
+    
     <br>
 
-    <h1>Pedidos Sin Finalizar</h1>
-
-    <table border="2" align="center">
-        <tr>
-            <td colspan="6"></td>
-
-        </tr>
-
-        <tr>
-            <td>id_pedido</td>
-            <td>id_cliente</td>
-            <td>Nombre</td>
-            <td>Costo del Pedido</td>
-            <td>Nombre_Bebida</td>
-            <td>Fecha del Pedido</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <h1>Ver Pedidos</h1>
     
+    <br><br>
+
+    <div class="tabla">
+
+        <div class="tabla_section">
+        <table>
+            <thead>
+                <tr>
+                    <th>id_pedido</th>
+                    <th>Productos</th>
+                    <th>Cantidad</th>
+                    <th>Costo</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="5">1</td>
+                    <td>Jugo de naranja</td>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Jugo de naranja</td>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jugo de naranja</td>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jugo de naranja</td>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jugo de naranja</td>
+                    <td>1</td>
+                    <td>25</td>
+                    <td>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Fecha :</td>
+                    <td>2024-06-10</td>
+                    <td>Total :</td>
+                    <td>$512</td>
+
+                </tr>
+            </tbody>
+
+        </table>
+        </div>
+
+        <div class="botones">
+ 
+            <form action="./Bienvenida.html">
+            <input type="submit" class="btn-submit" value="Finalizar" >
+            </form>
+
+            <form action="./Bienvenida.html">
+            <input type="submit" class="btn-submit" value="Crear" >
+            </form>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
 </body>
 </html>

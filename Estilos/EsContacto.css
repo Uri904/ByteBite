@@ -21,6 +21,11 @@ body{
 
 }
 
+header{
+    margin-top: 8px;
+    align-items: center;
+}
+
 table{
     width: 100%;
     color:rgb(0, 0, 0);
@@ -43,6 +48,12 @@ th{
     justify-content: center;
 }
 
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size:30px;
+}
+
 td{
     padding: 15px;
     font-weight: 700;
@@ -52,10 +63,16 @@ td{
 }
 
 td img{
+    width: 200px;
     max-width: 100%;
     height: auto;
     text-align: center;
     justify-content: center;
+}
+
+.botones{
+    justify-content: space-evenly;
+    display: flex;
 }
 
 tbody tr td:hover,
@@ -65,7 +82,32 @@ thead th:hover{
 
 .highlight {
     background: #ffc043;
+    box-shadow: 1px 0px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
 }
+
+.btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #000000;
+	background: #ffcc66;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-submit:hover {
+	background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 
 .principal{
     justify-content: space-between;
@@ -73,45 +115,19 @@ thead th:hover{
     
 }
 
-.Brian{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
+.Integrante{
+    background: #ffffff;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: #ffcc66;
+    text-align: center;
 
-
-.Daniel{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
-
-.Jatziri{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
-
-.Kevin{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid rgb(0, 0, 0);
-    width: 20%;
-}
-
-.lider{
-    display: flex;
-    justify-content: center;
-}
-
-.Uri{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
 }
 
 .logo{
