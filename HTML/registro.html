@@ -5,44 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate</title>
     <link rel="stylesheet" href="../Estilos/EsRegistro.css">
+    <style>
+       
+    </style>
 </head>
 <body>
-    <img src="../IMG/Logo_ByteBite.png" alt="" style="display: block; margin: 0% auto;">   
-    <header><h1>REGISTRATE</h1></header>
+    <img src="../IMG/Logo_ByteBite.png" alt="" style="display: block; margin: 0 auto;">   
+    <header><h1>REGISTRA MESA</h1></header>
 
-<table>
-    <tr>
-        <th>Nombre</th>
-        <th>Contraseña</th>
-    </tr>
-    <tr>
-        <th><input type="text"></th>
-        <th><input type="password"></th>
-    </tr>
-    <tr>
-        <th>Confirma tu contraseña</th>
-        <th>Confirmación de contraseña de Admin</th>
-    </tr>
-    <tr>
-        <th><input type="password"></th>
-        <th><input type="password"></th>
-    </tr>
-</table>
-<br>
-<br>
-<p id="po">
-<a href="#">
-<button>
-REGISTRARSE
-</button>
-</a>
-</p> 
-<p id="pe">
-    <a href="">
-    <button>
-        Volver
-    </button>
-</a>
-</p>
+    <form action="../SQL/VAL_ALT_RegistroMesa.php" method="POST">
+        
+                 <div class="id inputBox">
+                    <input type="password" name="contra" placeholder=" ">
+                    <span>Contraseña</span>
+                  </div>
+            
+                   <br>
+            
+                <div class="id inputBox">
+                    <input type="password" name="contraConfi" placeholder=" ">
+                    <span>Confirma Contraseña</span>
+                  </div>
+
+                  <br>
+            
+                <div class="id inputBox">
+                    <input type="password" name="contraAdmin" placeholder=" ">
+                    <span>Contraseña Admin</span>
+                  </div>
+            
+       
+        <br>
+        <br>
+        <input type="submit" value="REGISTRAR MESA">
+    </form>
+
+    <p id="pe">
+        <a href="">
+            <button>Volver</button>
+        </a>
+    </p>
 </body>
 </html>

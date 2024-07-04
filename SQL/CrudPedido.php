@@ -7,12 +7,12 @@ class CrudPedido extends Conexion{
         parent::__construct();
     }
     function readPedido($Pedido){
-        $sql = "INSERT INTO Pedido(costo,fecha,id_mesero,id_cliente,estado)
+        $sql = "INSERT INTO Pedido(costo,fecha,id_mesa,id_cliente,estado)
         VALUES(?,now(),?,?,?)";
 
 $statement = parent::getConexion()->prepare($sql);
 $statement->bindParam(1,$Pedido->costo);
-$statement->bindParam(2,$Pedido->id_mesero);
+$statement->bindParam(2,$Pedido->id_mesa);
 $statement->bindParam(3,$Pedido->id_cliente);
 $statement->bindParam(4,$Pedido->estado);
 
@@ -24,7 +24,7 @@ if($statement->execute()){
 }
 }
 
-$objP=new pedido(1,2500,'2024-03-03',3,1,'Finalizado');
+$objP=new pedido(1,2500,'2024-03-03',1,1,'Finalizado');
 $crud= new CrudPedido();
 $crud->readPedido($objP);
 ?>
