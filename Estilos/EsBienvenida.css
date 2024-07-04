@@ -70,16 +70,28 @@ body{
     width: 40%;
     border-bottom: 10px;
     float: left;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffdc97;
     border-radius: 10px;
-    border: 3px solid #ff0000;
+    border: 3px solid #ffdc97;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 450px;
 }
 
 .img_bienvenida{
     float: right;
     display: flex;
     border-radius: 15%;
-    border: 3px solid #ff0000;
+    border: 3px solid #ffbb33;
 }
 
 .botones{

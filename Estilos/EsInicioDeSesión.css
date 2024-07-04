@@ -3,18 +3,23 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+
 }
 
 img{
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
     border-radius: 50%;
     border: 5px solid saddlebrown;
 }
-h1{
+h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    font-size:40px;
+    font-size:30px;
 }
 
 .formulario{
@@ -37,8 +42,8 @@ label{
 	height: 40px;
 	line-height: 40px;
 	border: none;
-	color: #fff;
-	background: #ffb151;
+	color: #000000;
+	background: #ffcc66;
 	border-radius: 3px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -50,10 +55,71 @@ label{
 	height: 40px;
 	line-height: 40px;
 	border: none;
-	color: #fff;
-	background: #ffb151;
+	color: #000000;
+	background: #ffcc66;
 	border-radius: 3px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.inputBox{
+	position: relative;
+	width: 250px;
+}
+
+.inputBox input{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #000000;
+	background: #ffe4b7;
+	border-radius: 5px;
+	outline: none;
+	color: #000000;
+	font-size: 1em;
+	transition: 0.5s;
+}
+
+.inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: #000000;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+	color: #ffa200;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	padding: 0 10px;
+	background: #ffe4b7;
+	border-left: 1px solid #ff8400;
+	border-right: 1px solid #ff8400;
+	letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(1) input:valid ~ span,
+.inputBox:nth-child(1) input:focus ~ span {
+	background: #ff8400;
+	color: #ffe4b7;
+	border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus{
+	border: 1px solid #ff8400;
+}
