@@ -8,11 +8,10 @@
 </head>
 <body >
 <?php
-$id=$_POST["id"];
 $usuario=$_POST["correo"];
 $contra=$_POST["contras"];
 
-if(empty($usuario) || empty($contra) ||empty($id)){
+if(empty($usuario) || empty($contra)){
     echo"<h1>ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE</h1> <br>"; 
 
     echo'<a href="../HTML/InicioDeSesión.html" >
