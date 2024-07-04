@@ -101,6 +101,10 @@ cantidad int NOT NULL,
 FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido)on UPDATE CASCADE,
 FOREIGN KEY (id_platillo) REFERENCES platillo (id_platillo)on UPDATE CASCADE);
 
+INSERT INTO empleado (nombre_empleado, apellido_paterno, apellido_materno, calle, municipio, colonia, codigo_postal, salario, telefono)
+VALUES
+    ('bytebiv', 'bytebiv', 'bytebiv', '', '', '', '55555',0, '55555');
+
 
 INSERT INTO administrador (contraseña, id_empleado)
 VALUES
@@ -110,36 +114,36 @@ VALUES
 
 INSERT INTO bebida (id_bebida,nombre_bebida, precio, descripcion)
 VALUES
-    (1,'Pastel', 60.00, 'pastel de chocolate.'),
-    (2,'Tarta Lima', 45.00, 'Tarta de limón.'),
-    (3,'Cheesecake', 55.00, 'Cheesecake .'),
-    (4,'Helado', 30.00, 'Helado de vainilla.'),
-    (5,'Crepas', 50.00, 'Crepas de crema.'),
-    (6,'Filete', 180.00, 'Filete de salmón.'),
-    (7,'Pasta', 150.00, 'Pasta fetuccini'),
-	(8,'Carnitas', 120.00, 'Tacos mexicanos.'),
-    (9,'Ensalada César', 130.00, 'Ensalada césar.'),
-    (10,'Hamburguesa', 110.00, 'Hamburguesa '),
-    (11,'Pastel', 60.00, 'pastel de chocolate.'),
-    (12,'Tarta Lima', 45.00, 'Tarta de limón.'),
-    (13,'Cheesecake', 55.00, 'Cheesecake .'),
-    (14,'Helado', 30.00, 'Helado de vainilla.'),
-    (15,'Crepas', 50.00, 'Crepas de crema.'),
-    (16,'Filete', 180.00, 'Filete de salmón.'),
-    (17,'Pasta', 150.00, 'Pasta fetuccini'),
-	(18,'Carnitas', 120.00, 'Tacos mexicanos.'),
-    (19,'Ensalada César', 130.00, 'Ensalada césar.'),
-    (20,'Hamburguesa', 110.00, 'Hamburguesa '),
-    (21,'Pastel', 60.00, 'pastel de chocolate.'),
-    (22,'Tarta Lima', 45.00, 'Tarta de limón.'),
-    (23,'Cheesecake', 55.00, 'Cheesecake .'),
-    (24,'Helado', 30.00, 'Helado de vainilla.'),
-    (25,'Crepas', 50.00, 'Crepas de crema.'),
-    (26,'Filete', 180.00, 'Filete de salmón.'),
-    (27,'Pasta', 150.00, 'Pasta fetuccini'),
-	(28,'Carnitas', 120.00, 'Tacos mexicanos.'),
-    (29,'Ensalada César', 130.00, 'Ensalada césar.'),
-    (30,'Hamburguesa', 110.00, 'Hamburguesa ');
+    (1,'Margarita', 180.00, 'Cóctel mexicano de tequila, triple sec y jugo de limón.'),
+    (2,'Mojito', 180.00, 'Bebida cubana de ron, menta, azúcar, lima y soda.'),
+    (3,'Piña Colada', 216.00, 'Cóctel tropical de ron, crema de coco y jugo de piña.'),
+    (4,'Sangría', 144.00, 'Bebida española de vino tinto mezclado con frutas y un toque de brandy.'),
+    (5,'Negroni', 216.00, 'Cóctel italiano de ginebra, vermut rosso y Campari.'),
+    (6,'Caipirinha', 180.00, 'Bebida brasileña de cachaça, lima y azúcar.'),
+    (7,'Old Fashioned', 216.00, 'Cóctel clásico de whisky, azúcar, y amargos.'),
+	(8,'Martini', 216.00, 'Bebida elegante de ginebra y vermut seco, a menudo con una aceituna.'),
+    (9,'Cosmopolitan', 216.00, 'Cóctel de vodka, triple sec, jugo de arándano y jugo de lima.'),
+    (10,'Manhattan', 216.00, 'Cóctel de whisky, vermut dulce y amargos.'),
+    (11,'Jugo de Naranja', 72.00, 'Bebida refrescante y cítrica hecha de naranjas exprimidas.'),
+    (12,'Jugo de Manzana', 72.00, 'Jugo dulce y afrutado hecho de manzanas.'),
+    (13,'Jugo de Zanahoria', 90.00, 'Bebida nutritiva y ligeramente dulce hecha de zanahorias.'),
+    (14,'Jugo de Piña', 90.00, 'Jugo tropical y refrescante hecho de piñas.'),
+    (15,'Jugo de Uva', 90.00, 'Bebida dulce y afrutada hecha de uvas.'),
+    (16,'Jugo de Tomate', 72.00, 'Bebida salada y ligeramente ácida hecha de tomates.'),
+    (17,'Jugo de Mango', 90.00, 'Jugo tropical, dulce y espeso hecho de mangos.'),
+	(18,'Jugo de Limón', 54.00, 'Bebida ácida y refrescante hecha de limones.'),
+    (19,'Jugo de Arándano', 90.00, 'Jugo agridulce hecho de arándanos.'),
+    (20,'Jugo de Sandía', 72.00, 'Bebida refrescante y ligera hecha de sandía.'),
+    (21,'Licuado de Plátano y Fresa', 90.00, 'Bebida cremosa hecha con plátano, fresas y leche.'),
+    (22,'Licuado de Mango', 90.00, 'Bebida espesa y dulce hecha de mango y leche.'),
+    (23,'Licuado de Papaya', 90.00, 'Licuado tropical hecho con papaya y leche.'),
+    (24,'Licuado de Chocolate', 108.00, 'Bebida dulce y cremosa hecha con chocolate, leche y a veces helado.'),
+    (25,'Licuado de Avena', 90.00, ' Bebida nutritiva hecha con avena, plátano y leche.'),
+    (26,'Licuado Espinaca y Manzana', 108.00, 'Bebida verde y saludable hecha con espinaca.'),
+    (27,'Licuado de Durazno', 90.00, 'Bebida dulce y afrutada hecha con duraznos y leche.'),
+	(28,'Licuado de Coco', 90.00, 'Bebida tropical hecha con pulpa de coco y leche.'),
+    (29,'Frutas Mixtas', 180.00, 'Bebida refrescante hecha con una mezcla de frutas y leche.'),
+    (30,'Licuado de Almendras', 180.00, 'Bebida cremosa hecha con leche de almendra, plátano y miel.');
 
 INSERT INTO alcohol (porsentaje, id_bebida)
 VALUES
@@ -147,23 +151,38 @@ VALUES
 (20, 2),
 (30, 3),
 (40, 4),
-(35, 5);
+(35, 5),
+(40, 6),
+(20, 7),
+(30, 8),
+(40, 9),
+(35, 10);
 
 INSERT INTO jugo (fruta, id_bebida)
 VALUES
-('Naranja', 6),
-('Manzana', 7),
-('Piña', 8),
-('Fresa', 9),
-('Mixto', 10);
+('Naranja', 11),
+('Manzana', 12),
+('Zanahoria', 13),
+('Piña', 14),
+('uva', 15),
+('Tomate', 16),
+('Mango', 17),
+('Limon', 18),
+('Arandano', 19),
+('Sandia', 20);
 
 INSERT INTO licuado (id_bebida)
 VALUES
-(11),
-(12),
-(13),
-(14),
-(15);
+(21),
+(22),
+(23),
+(24),
+(25),
+(26),
+(27),
+(28),
+(29),
+(30);
 
 INSERT INTO platillo (id_platillo,nombre_platillo, precio, descripcion)
 VALUES
@@ -182,21 +201,21 @@ VALUES
     (13,'Tacos al Pastor', 180.00, 'Tacos mexicanos de carne marinada y asada.'),
     (14,'Lasagna', 270.00, 'Plato italiano de capas de pasta, carne molida, salsa de tomate y queso.'),
     (15,'Ceviche', 270.00, 'Plato de mariscos crudos marinados en jugo de limón, típicamente con cebolla, cilantro y ají.'),
-    (16,'Filete', 180.00, 'Filete de salmón.'),
-    (17,'Pasta', 150.00, 'Pasta fetuccini'),
-	(18,'Carnitas', 120.00, 'Tacos mexicanos.'),
-    (19,'Ensalada César', 130.00, 'Ensalada césar.'),
-    (20,'Hamburguesa', 110.00, 'Hamburguesa '),
-    (21,'Pastel', 60.00, 'pastel de chocolate.'),
-    (22,'Tarta Lima', 45.00, 'Tarta de limón.'),
-    (23,'Cheesecake', 55.00, 'Cheesecake .'),
-    (24,'Helado', 30.00, 'Helado de vainilla.'),
-    (25,'Crepas', 50.00, 'Crepas de crema.'),
-    (26,'Filete', 180.00, 'Filete de salmón.'),
-    (27,'Pasta', 150.00, 'Pasta fetuccini'),
-	(28,'Carnitas', 120.00, 'Tacos mexicanos.'),
-    (29,'Ensalada César', 130.00, 'Ensalada césar.'),
-    (30,'Hamburguesa', 110.00, 'Hamburguesa ');
+    (16,'Moussaka', 324.00, 'Platillo griego de capas de berenjena, carne de cordero y salsa bechamel horneada.'),
+    (17,'Poutine', 180.00, 'Comida canadiense de papas fritas cubiertas con queso en grano y salsa de carne.'),
+	(18,'Feijoada', 360.00, 'Guiso brasileño de frijoles negros con carne de cerdo y res, servido con arroz.'),
+    (19,'Curry de Pollo', 270.00, 'Plato indio de pollo cocido en una salsa espesa y especiada con cúrcuma.'),
+    (20,'Kimchi Jjigae', 270.00, 'Estofado coreano hecho con kimchi, tofu, cerdo y vegetales.'),
+    (21,'Puré de Papas', 90.00, 'Papas hervidas y machacadas con mantequilla y leche.'),
+    (22,'Arroz Pilaf', 90.00, ' Arroz cocido en caldo con especias y a veces con verduras.'),
+    (23,'Ensalada de Col', 72.00, ' Ensalada fresca de col rallada y zanahoria con mayonesa..'),
+    (24,'Elote Asado', 72.00, 'Mazorca de maíz asada, a menudo servida con mayonesa, queso y chile.'),
+    (25,'Pan de Ajo', 72.00, 'Pan tostado con mantequilla de ajo y perejil.'),
+    (26,'Tabulé', 108.00, 'Ensalada de trigo bulgur con tomate, pepino, perejil, menta y limón.'),
+    (27,'Brócoli al Vapor', 108.00, 'Brócoli cocido al vapor, a menudo servido con un poco de mantequilla.'),
+	(28,'Patatas Bravas', 90.00, ' Papas fritas españolas servidas con salsa brava y alioli.'),
+    (29,'Ratatoille', 108.00, 'Guiso francés de berenjenas, calabacines, pimientos y tomate.'),
+    (30,'Hummus', 90.00, 'Puré de garbanzos con tahini, ajo y limón, servido con pan pita.');
     
 
 INSERT INTO postre (id_platillo)

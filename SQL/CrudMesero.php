@@ -26,7 +26,7 @@ class CrudMesero extends Conexion{
        
  
 }
-$objM=new mesero(1,'Holaquehace','elbriansr@gmail.com');
+$objM=new mesero(2,'elbriansr@gmail.com','Holaquehace');
 $crud= new CrudMesero();
 $crud->readMesero($objM); 
 ?>
