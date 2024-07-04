@@ -24,7 +24,7 @@ if($statement->execute()){
 }
 }
 
-$objCO=new contiene(1,1,1,2);
+$objCO=new contiene(2,1,1,2);
 $crud= new CrudContiene();
 $crud->readContiene($objCO);
 ?>

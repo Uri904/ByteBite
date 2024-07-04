@@ -24,7 +24,7 @@ if($statement->execute()){
 }
 }
 
-$objP=new pedido(1,2500,'2024-03-03',2,1,'Finalizado');
+$objP=new pedido(1,2500,'2024-03-03',1,1,'Finalizado');
 $crud= new CrudPedido();
 $crud->readPedido($objP);
 ?>
