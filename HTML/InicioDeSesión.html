@@ -3,69 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InicioDeSesión</title>
+    <title>InicioDeSesión</title><!--Nombre de la pestaña-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="../Estilos/EsInicioDeSesión.css">
-    <link rel="stylesheet" href="../Estilos/EsVentaEmergente.css">
+    <link rel="stylesheet" href="../Estilos/EsInicioDeSesión.css"><!--Para incluir los archivos de estilos CSS-->
+    <link rel="stylesheet" href="../Estilos/EsVentaEmergente.css"><!--Para incluir lo estilos a la Ventana Emergente-->
     <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
 </head>
 <body>
     
   <br>
 
- <img src="../IMG/Logo_ByteBite.png" alt="logo" style="display: block; margin: 0% auto;">   
+ <img src="../IMG/Logo_ByteBite.png" alt="logo" style="display: block; margin: 0% auto;"> <!--Logo del proyecto "ByteBite"-->
    <header>
     <br>
     <h2>INICIO DE SESIÓN</h2>
     <br>
   </header>
 
-  <div class="formulario">
+  <div class="formulario"><!--Formulario para Iniciar Sesión-->
     <form action="../PHP/VaInicioSesion.php" method="post" >
       <div class="id inputBox">
-        <input type="number" name="id" placeholder=" ">
+        <input type="number" name="id" placeholder=" "><!--Input para ingresar un id de empleado-->
         <span>ID Empleado</span>
       </div>
       <br>
       <div class="id inputBox">
-        <input type="email" name="correo" placeholder=" ">
-        <span>Usuario</span>
+        <input type="email" name="correo" placeholder=" "><!--Input para ingresar un correo -->
+        <span>Correo</span>
       </div>
       <br>
       <div class="id inputBox">
-        <input type="text" name="contras" placeholder=" ">
+        <input type="text" name="contras" placeholder=" "><!--Input para ingresa una contraseña-->
         <span>Contraseña</span>
       </div>
 
       <div class="envio_y_limpiar">
         <br>
-        <input type="submit" value="Iniciar Sesión" class="envio" >
+        <input type="submit" value="Iniciar Sesión" class="envio" ><!--Input para enviar los datos en el formulario-->
         <br><br>
-        <input type="reset" value="Limpiar" class="limpiar">
+        <input type="reset" value="Limpiar" class="limpiar"><!--Input para limpiar lo que se ingrese en el formulario-->
       </div>
     </form>
   </div>
 
 
+  <!--Boton para iniciar sesion como Modo Administrador-->
   <div class="agregar">
     <div class="contenedor">
         <article>
           <button id="btn-abrir-popup" class="btn-abrir-popup">Modo Administrador</button>
         </article>
 
+        <!--Ventana Emergente para iniciar sesion como Administrador-->
           <div class="overlay" id="overlay">
             <div class="popup" id="popup">
               <a href="./InicioDeSesión.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
               <h3>Modo Administrador</h3>
               <h4>Contraseña Requerida</h4>
 
+
+
               <!--Agregar link para mandar registro a PHP-->
+
+              <!--Formulario para Iniciar sesion como admin-->
               <form action="../PHP/ValAdmin.php" method="post">
                 <div class="contenedor-inputs">
-                  <input type="password" placeholder="contraseña" name="contra">
+                  <input type="password" placeholder="contraseña" name="contra"><!--Input para ingresar contraseña de admin-->
                 </div>
-              <input type="submit" class="btn-submit" value="acceder" >
+              <input type="submit" class="btn-submit" value="acceder" ><!--input para acceder como administrador-->
             </form>
           </div>
         </div>
