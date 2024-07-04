@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bebidas</title>
+    <title>Bebidas</title><!--Nombre que lleva la pestaña -->
+    <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png" /><!--Icono de la pestaña -->
+    <!--Para incluir a los archivos de estilo CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,10 +16,13 @@
 </head>
 
 <body>
+    <!--Encabezado -->
     <header class="header">
         <div class="encabezado">
             <nav class="nav">
+                <!--link para regresar a la página de bienvenida -->
                 <a href="./Bienvenida.html" class="logo nav-link">ByteBite</a>
+                <!--Lista desordenada de navegacion -->
                 <ul class="nav-menu">
                     <li class="nav-menu-item"><a href="./platillo.html" class="nav-menu-link nav-link">Platillo</a></li>
                     <li class="nav-menu-item"><a href="./Crear_pedido.html" class="nav-menu-link nav-link">Regresar</a></li>
@@ -25,30 +30,34 @@
             </nav>
         </div>
     </header>
+    <!--Carrusel de alcoholes (deslizador) -->
     <div class="swiper mySwiper">
         <h1 align="center">Alcoholes</h1>
         <div class="swiper-wrapper">
 
-
-            <div class="swiper-slide">
+            <!--Diapositiva 1 del carrusel Alcoholes,mas estilos -->
+            <!--Etiquetas <div> para organizar los elementos -->
+            <div class="swiper-slide" >
                 <div class="bebida-content">
                     <div class="bebida-txt">
+                        <!--Descripcion del producto -->
                         <h3>Margarita</h3>
                         <p>
                             Cóctel mexicano de tequila, triple sec y jugo de limón.
                         </p>
-                        <span>Precio: $180 MXN</span>
+                        <span>Precio: $180 MXN</span><!--Etiqueta <span> para agrupar en linea -->
                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/alcohol/Margarita.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/alcohol/Margarita.png" alt="logo"><!--Imagen del producto -->
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
             </div>
-
+ <!--Diapositiva 2 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
+                         <!--Informacion del producto-->
                         <h3>Mojito</h3>
                         <p>
                             Bebida cubana de ron, menta, azúcar, lima y soda.
@@ -56,15 +65,16 @@
                         <span>Precio: $180 MXN</span>
                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/alcohol/Mojito.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/alcohol/Mojito.png" alt="logo"><!--Imagen del producto -->
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
             </div>
-
+            <!--Diapositiva 3 del carrusel Alcoholes,mas  estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
+                         <!--Descripcion del producto -->
                         <h3>Piña Colada</h3>
                         <p>
                             Cóctel tropical de ron, crema de coco y jugo de piña.
@@ -72,15 +82,16 @@
                         <span>Precion: $216 MXN</span>
                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/alcohol/Piña Colada.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/alcohol/Piña Colada.png" alt="logo"><!--Imagen del producto -->
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
-            </div>
-
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
+            </div> 
+ <!--Diapositiva 4 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
+                        <!--Descripcion del producto -->
                         <h3>Sangría</h3>
                         <p>
                             Bebida española de vino tinto mezclado con frutas y un toque de brandy.
@@ -88,15 +99,17 @@
                         <span>Precio: $144 MXN</span>
                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/alcohol/Sangría.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/alcohol/Sangría.png" alt="logo"><!--Imagen del producto -->
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
             </div>
 
+ <!--Diapositiva 5 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
+                        <!--Descripcion del producto -->
                         <h3>Negroni</h3>
                         <p>
                             Cóctel italiano de ginebra, vermut rosso y Campari.
@@ -104,28 +117,30 @@
                         <span>Precio: $216 MXN</span>
                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/alcohol/Negroni.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/alcohol/Negroni.png" alt="logo"><!--Imagen del producto -->
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
             </div>
-
+            <!--Diapositiva 6 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
+                         <!--Descripcion del producto -->
                         <h3>Caipirinha</h3>
                         <p>
                             Bebida brasileña de cachaça, lima y azúcar.
                         </p>
-                        <span>Precion: $180 MXN</span>
-                    </div>
+                        <span>Precio: $180 MXN</span>
+                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/alcohol/Caipirinha.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/alcohol/Caipirinha.png" alt="logo"><!--Imagen del producto -->
+                    
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
             </div>
-
+<!--Diapositiva 7 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -141,7 +156,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+<!--Diapositiva 7 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -157,7 +172,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+<!--Diapositiva 8 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -165,7 +180,7 @@
                         <p>
                             Cóctel de vodka, triple sec, jugo de arándano y jugo de lima.
                         </p>
-                        <span>Precion: $216 MXN</span>
+                        <span>Precio: $216 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/alcohol/Cosmopolitan.png" alt="logo">
@@ -173,7 +188,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+<!--Diapositiva 9 del carrusel Alcoholes,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -181,7 +196,7 @@
                         <p>
                             Cóctel de whisky, vermut dulce y amargos.
                         </p>
-                        <span>Precion: $216 MXN</span>
+                        <span>Precio: $216 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/alcohol/Manhattan.png" alt="logo">
@@ -194,11 +209,11 @@
     </div>
 
     <br>
-
+<!--Diapositiva 1 del carrusel Jugos,mas estilos -->
     <div class="swiper mySwiper">
-        <h1 align="center">Jugos</h1>
+        <h1 align="center">Jugos</h1><!--align, para alinear elementos -->
         <div class="swiper-wrapper">
-
+        <!--Descripciones mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -209,12 +224,13 @@
                         <span>Precio: $72 MXN</span>
                     </div>
                     <div class="bebida-img">
-                        <img src="../IMG/Menu/bebidas/jugo/Jugo de Naranja.png" alt="logo">
+                        <img src="../IMG/Menu/bebidas/jugo/Jugo de Naranja.png" alt="logo">ucto<!--Imagen del prod, 
+                        'alt' para describir la imagenn textualmente-->
                     </div>
                 </div>
-                <a href="#" class="boton1">Agregar</a>
+                <a href="#" class="boton1">Agregar</a><!--Boton para agregar producto -->
             </div>
-
+                <!--Diapositiva 2 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -230,7 +246,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+                v<!--Diapositiva 3 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -238,7 +254,7 @@
                         <p>
                             Bebida nutritiva y ligeramente dulce hecha de zanahorias.
                         </p>
-                        <span>Precion: $90 MXN</span>
+                        <span>Precio: $90 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/jugo/Jugo de Zanahoria.png" alt="logo">
@@ -246,7 +262,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+                <!--Diapositiva 4 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -262,7 +278,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+                <!--Diapositiva 5 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -278,7 +294,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+                <!--Diapositiva 6 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -294,7 +310,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+                <!--Diapositiva  7 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -310,7 +326,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+            <!--Diapositiva 8 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -326,7 +342,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+            <!--Diapositiva 9 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -334,7 +350,7 @@
                         <p>
                             Jugo agridulce hecho de arándanos.
                         </p>
-                        <span>Precion: $90 MXN</span>
+                        <span>Precio: $90 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/jugo/Jugo de Arándano.png" alt="logo">
@@ -342,7 +358,7 @@
                 </div>
                 <a href="#" class="boton1">Agregar</a>
             </div>
-
+            <!--Diapositiva 10 del carrusel Jugos,mas estilos -->
             <div class="swiper-slide">
                 <div class="bebida-content">
                     <div class="bebida-txt">
@@ -350,7 +366,7 @@
                         <p>
                             Bebida refrescante y ligera hecha de sandía.
                         </p>
-                        <span>Precion: $72 MXN</span>
+                        <span>Precio: $72 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/jugo/Jugo de Sandía.png" alt="logo">
@@ -364,7 +380,7 @@
 
 
     <br>
-
+<!--Diapositiva 1 del carrusel Licuados,mas estilos -->
     <div class="swiper mySwiper">
         <h1 align="center">Licuados</h1>
         <div class="swiper-wrapper">
@@ -408,7 +424,7 @@
                         <p>
                             Licuado tropical hecho con papaya y leche.
                         </p>
-                        <span>Precion: $90 MXN</span>
+                        <span>Precio: $90 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/licuados/Licuado de Papaya.png" alt="logo">
@@ -504,7 +520,7 @@
                         <p>
                             Bebida refrescante hecha con una mezcla de frutas y leche.
                         </p>
-                        <span>Precion: $108 MXN</span>
+                        <span>Precio: $108 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/licuados/Licuado de Frutas Mixtas.png" alt="logo">
@@ -520,7 +536,7 @@
                         <p>
                             Bebida cremosa hecha con leche de almendra, plátano y miel.
                         </p>
-                        <span>Precion: $108 MXN</span>
+                        <span>Precio: $108 MXN</span>
                     </div>
                     <div class="bebida-img">
                         <img src="../IMG/Menu/bebidas/licuados/Licuado de Almendra.png" alt="logo">
@@ -536,5 +552,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../JS/Carrusel.js"></script>
 </body>
+
 
 </html>
