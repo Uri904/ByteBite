@@ -1,8 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body{
     background-image: url(../IMG/Fondo_Pagina.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    min-height:  100vh;
+}
+
+.container{
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+table{
+    width: 100%;
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: #ffcc66;
+    text-align: center;
+}
+
+thead{
+	background: #ffcc66;
+}
+
+th{
+    padding: 15px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+td{
+    padding: 15px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+td img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+tbody tr td:hover,
+thead th:hover{
+    background: #ffc043;
+}
+
+.highlight {
+    background: #ffc043;
 }
 
 .principal{
