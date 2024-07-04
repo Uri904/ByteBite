@@ -16,26 +16,27 @@
 
  <img src="../IMG/Logo_ByteBite.png" alt="logo" style="display: block; margin: 0% auto;">   
    <header>
-    <h1>INICIO DE <br> SESIÓN</h1>
+    <br>
+    <h2>INICIO DE SESIÓN</h2>
+    <br>
   </header>
 
   <div class="formulario">
     <form action="../PHP/VaInicioSesion.php" method="post" >
-      <div class="id">
-        <label for="">ID de empleado</label> <br>
-        <input type="number" name="id">
+      <div class="id inputBox">
+        <input type="number" name="id" required="required">
+        <span>ID Empleado</span>
       </div>
-
-      <div class="email">
-        <label for="">Usuario</label> <br>
-        <input type="email" placeholder="Alguien@.com" name="correo">
+      <br>
+      <div class="id inputBox">
+        <input type="email" name="correo" required="required">
+        <span>Usuario</span>
       </div>
-
-      <div class="password">
-        <label for="">Contraseña</label> <br>
-
-        <input type="text" placeholder="****" name="contras">
-      </div> 
+      <br>
+      <div class="id inputBox">
+        <input type="text" name="contras" required="required">
+        <span>Contraseña</span>
+      </div>
 
       <div class="envio_y_limpiar">
         <br>
