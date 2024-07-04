@@ -1,6 +1,6 @@
 <?php
 
-class mesero{
+class mesa{
     public $id_empleado;
     public $contra;
     public $correo;

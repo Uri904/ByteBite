@@ -1,30 +1,18 @@
 CREATE DATABASE bytebite;
 \c bytebite;
 
-CREATE TABLE empleado(
-id_empleado SERIAL PRIMARY KEY,
-nombre_empleado VARCHAR(40) NOT NULL,
-apellido_paterno VARCHAR(40) NOT NULL,
-apellido_materno VARCHAR(40) NOT NULL,
-calle VARCHAR(50),
-municipio VARCHAR(50),
-colonia VARCHAR(50),
-codigo_postal int NOT NULL,
-salario DECIMAL(10,2) NOT NULL,
-telefono bigint NOT NULL);
 
 CREATE TABLE administrador(
 id_administrador serial PRIMARY KEY,
-contraseña VARCHAR(10) NOT NULL,
-id_empleado int NOT NULL,
-FOREIGN KEY (id_empleado) REFERENCES empleado (id_empleado)on UPDATE CASCADE);
+contraseña VARCHAR(10) NOT NULL;
 
-CREATE TABLE mesero(
-id_mesero SERIAL PRIMARY KEY,
-id_empleado int NOT NULL,
-contra VARCHAR(50),
-correo VARCHAR(50),
-FOREIGN KEY (id_empleado) REFERENCES empleado (id_empleado)on UPDATE CASCADE);
+CREATE TABLE mesa(
+    id_mesa SERIAL PRIMARY KEY,
+    correo VARCHAR(50),
+    contraseña VARCHAR(50),
+    confiContra VARCHAR(50),
+    contraAdmin VARCHAR(50));
+
 
 CREATE TABLE cliente(
 id_cliente SERIAL PRIMARY KEY,
@@ -34,10 +22,10 @@ CREATE TABLE pedido(
 id_pedido SERIAL PRIMARY KEY,
 costo DECIMAL (10,2) NOT NULL,
 fecha DATE NOT NULL,
-id_mesero int,
+id_mesa int,
 id_cliente int NOT NULL,
 estado VARCHAR(20),
-FOREIGN KEY (id_mesero) REFERENCES mesero (id_mesero)on UPDATE CASCADE,
+FOREIGN KEY (id_mesa) REFERENCES mesa (id_mesa)on UPDATE CASCADE,
 FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)on UPDATE CASCADE);
 
 CREATE TABLE bebida(
