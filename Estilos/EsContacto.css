@@ -77,14 +77,7 @@ td img{
 
 tbody tr td:hover,
 thead th:hover{
-    background: #ffc043;
-}
-
-.highlight {
-    background: #ffc043;
-    box-shadow: 1px 0px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
-    transform: scale(1.1);
-    transition: 1s;
+    background: #ffb151;
 }
 
 .btn-submit {
@@ -99,6 +92,20 @@ thead th:hover{
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
+}
+
+.highlight{
+    background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.Integrante:hover{
+    background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .btn-submit:hover {
@@ -137,10 +144,31 @@ thead th:hover{
     border: 5px solid saddlebrown;
 }
 
-img{
-    width: 50px;
-    height: 50px;
+.imga{
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
 }
+
+.imgic{
+    width: 30px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+header{
+    margin-top: 10 px;
+    margin-bottom: 10px;
+}
+
 .boton{
     justify-content: center;
     display: flex;

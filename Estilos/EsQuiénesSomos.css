@@ -3,63 +3,85 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    min-height:  100vh;
+    align-items: center;
 }
 
 .principal{
     justify-content: space-between;
     display: flex;
+    margin-top: 200px;
+    
 }
 
-.objetivo{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
-
-.mision{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
-
-.vision{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
-
-.contacto{
-    border-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-color: 5px solid black;
-    width: 20%;
-}
-
-.logo{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid saddlebrown;
-}
-
-img{
-    width: 50px;
-    height: 50px;
-}
-.boton{
-    justify-content: center;
-    display: flex;
-}
-button{
-    background-color: rgb(255, 255, 255);
-    border: 10px;
-    padding: 15px 32px;
+.Integrante{
+    background: #ffffff;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: #ffcc66;
     text-align: center;
 }
 
+.THE{
+        margin-top: 10 px;
+        margin-bottom: 10px;
+}
 
+img{
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: #fff;
+}
 
+p{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
 
+.Integrante:hover{
+    background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #000000;
+	background: #ffcc66;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-submit:hover {
+	background: #ffb151;
+    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.botones{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
