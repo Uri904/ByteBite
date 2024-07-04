@@ -17,14 +17,14 @@
     $contra = $_POST["contra"];
 
     if(empty($contra)){
+
         echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1>";
-        echo "<br>";
         echo'<a href="../HTML/InicioDeSesión.html" >
+    <br><br><br><br><br>
     <button>
     REGRESAR
     </button>
     </a>';
-
     }else {
         header("Location:../HTML/bienvenida_admin.html");
     }
