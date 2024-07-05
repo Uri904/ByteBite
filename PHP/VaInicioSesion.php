@@ -14,11 +14,9 @@ $contra=$_POST["contras"];
 if(empty($usuario) || empty($contra)){
     echo"<h1>ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE</h1> <br>"; 
 
-    echo'<a href="../HTML/InicioDeSesión.html" >
-    <button>
-    REGRESAR
-    </button>
-    </a>';
+    echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
+    <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
+  </form></div>';
 }else{
 
 
