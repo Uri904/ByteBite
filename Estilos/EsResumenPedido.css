@@ -91,6 +91,17 @@ td button:nth-child(1) {
     display: flex;
 }
 
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    background: -webkit-linear-gradient(left, #f1992d, #ffb151); /* Crea un degradado de fondo */
+    -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+    -webkit-text-fill-color: transparent; /* Elimina el color de la fuente original */
+    font-family: 'Roboto', sans-serif; /* Elige una fuente moderna */
+    font-size: 2em; /* Aumenta aún más el tamaño de la fuente */
+    padding: 0.5em 1em; /* Agrega espacio alrededor del texto */
+    border-radius: 5px; /* Redondea las esquinas */
+  }
+
 .btn-submit {
     padding: 0 20px;
     height: 40px;

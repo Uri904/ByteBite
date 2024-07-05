@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERROR</title>
     <link rel="stylesheet" href="../Estilos/ValidacionInicioSesion.css">
+    <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
 </head>
 
 <body >

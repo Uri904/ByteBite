@@ -20,12 +20,9 @@ $contraAdmin=$_POST['contraAdmin'];
 if(empty($contra) || empty($contraConfi) || empty($contraAdmin)){
     echo"<h1>ERROR: POR FAVOR LLENA LOS CAMPOS CORRECTAMENTE</h1><br>";
 
-    echo'<a href="../HTML/registro.html" >
-    <br><br><br><br><br>
-    <button>
-    REGRESAR
-    </button>
-    </a>';
+    echo '<div class="botones"><form action="../HTML/registro.html">
+    <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
+  </form></div>';
 }else{
     $objMes=new mesa($contra,$contraConfi,$contraAdmin);
     $crud= new CrudMesa();
