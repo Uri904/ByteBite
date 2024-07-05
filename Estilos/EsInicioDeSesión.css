@@ -1,125 +1,125 @@
-body{
-    background-image: url(../IMG/Fondo_Pagina.jpeg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-	display: flex;
-	justify-content: center;
-	min-height: 100vh;
-	flex-direction: column;
+body{	/* */
+    background-image: url(../IMG/Fondo_Pagina.jpeg); /*Para establecer la imagen de fondo */
+    background-attachment: fixed; /* Para que el fondo permanezca fijo */
+    background-repeat: no-repeat; /* Para no repetir la imagen de fondo */
+    background-size: cover; /* Para ajustar el fondo y cubra toda la pagina*/
+	display: flex; /*Para hacer elementos flexibles*/
+	justify-content: center; /*Centra los elementos del body*/
+	min-height: 100vh; /*Altura de los elementos del body*/
+	flex-direction: column; /*Coloca los elementos en una columna verticalS*/
 
 }
 
 img{
-    height: 200px;
-    width: 300px;
-    border-radius: 50%;
-    border: 5px solid saddlebrown;
+    height: 200px; /*Alto de la imagen*/
+    width: 300px; /*Ancho de la imagen*/
+    border-radius: 50%; /*Radio del borde de la imagen*/
+    border: 5px solid saddlebrown; /*Color del borde de la imagen*/
 }
 h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*Tipo de letra*/
+    text-align: center;/*Alineacion*/
+    font-size:30px;/*Tamaño de la letra*/
 }
 
 .formulario{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: flex; /*Para crecer o decrecer elementos*/
+    align-items: center;/*Alineacion de elementos*/
+    justify-content: center; /*Para distribuir en toda la pagina*/
+    text-align: center;/*Alineacon del texto*/
 }
 input{
-    background-color: white;
+    background-color: white;/*color para input*/
 }
 
 label{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; /*Alineacon del texto*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/*Fuente del texto*/
 }
 
 .envio{
-    padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #000000;
-	background: #ffcc66;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
+    padding: 0 20px;  /*Crea espacio*/
+	height: 40px; /*Alto*/
+	line-height: 40px; /*Distancia entre líneas de texto*/
+	border: none;/*Sin borde*/
+	color: #000000;/*Color texto*/
+	background: #ffcc66;/*Color fondo*/
+	border-radius: 3px;/*Radio del borde*/
+	font-family: 'Montserrat', sans-serif;/*Fuente del texto*/
+	font-size: 16px;/*Tamaño de la fuente*/
+	cursor: pointer;/*Tipo de cursor*/
+	transition: .3s ease all; /*Animacion del elemento*/
 }
 .limpiar{  
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #000000;
-	background: #ffcc66;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;}
+	padding: 0 20px; /*Crea espacio*/
+	height: 40px; /*Alto*/
+	line-height: 40px;/*Distancia entre líneas de texto*/
+	border: none; /*Sin borde*/
+	color: #000000; /*Color texto*/
+	background: #ffcc66; /*Color fondo*/
+	border-radius: 3px; /*Radio del borde*/
+	font-family: 'Montserrat', sans-serif; /*Fuente del texto*/
+	font-size: 16px; /*Tamaño de la fuente*/
+	cursor: pointer; /*Tipo de cursor*/
+	transition: .3s ease all;} /*Animacion del elemento*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*
+* /*ARCHIVO DE ESTILOS*/
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+    margin: 0; /*margen*/
+    padding: 0;	/*Crea espacio*/
+    box-sizing: border-box; /*Para definir un elemento conforme a la pagina*/
+	font-family: 'Poppins', sans-serif;/*Fuente del texto*/
 }
 
 .inputBox{
-	position: relative;
-	width: 250px;
+	position: relative; /*ajustar la posición del elemento*/
+	width: 250px; /*Ancho*/
 }
 
 .inputBox input{
-	width: 100%;
-	padding: 10px;
-	border: 1px solid #000000;
-	background: #ffe4b7;
-	border-radius: 5px;
-	outline: none;
-	color: #000000;
-	font-size: 1em;
-	transition: 0.5s;
+	width: 100%; /*Ancho*/
+	padding: 10px; /*Crea espacio*/
+	border: 1px solid #000000; /*Color del borde*/
+	background: #ffe4b7; /*Color del fondo*/
+	border-radius: 5px; /*Radio del borde*/
+	outline: none; /*Eliminar contorno*/
+	color: #000000; /*Color texto*/
+	font-size: 1em; /*Tamaño de la fuente*/
+	transition: 0.5s; /*Animacion del elemento*/
 }
 
 .inputBox span{
-	position: absolute;
-	left: 0;
-	padding: 10px;
+	position: absolute; /*Posicion*/
+	left: 0;  /*para colocar el borde izquierdo del elemento justo al comienzo del contenedor */
+	padding: 10px; /*Crea espacio*/
 	pointer-events: none;
-	font-size: 1em;
-	color: #000000;
+	font-size: 1em; /*Tamaño de la fuente*/
+	color: #000000; /*Color texto*/
 	text-transform: uppercase;
-	transition: 0.5s;
+	transition: 0.5s;/*Animacion del elemento*/
 }
 
 .inputBox input:not(:placeholder-shown) ~ span,
 .inputBox input:focus ~ span {
-	color: #ffa200;
-	transform: translateX(10px) translateY(-7px);
-	font-size: 0.65em;
-	padding: 0 10px;
-	background: #ffe4b7;
-	border-left: 1px solid #ff8400;
-	border-right: 1px solid #ff8400;
-	letter-spacing: 0.2em;
+	color: #ffa200; /*Color texto*/
+	transform: translateX(10px) translateY(-7px);  /* Para mover  10 píxeles hacia la derecha y 7 píxeles hacia arriba.*/
+	font-size: 0.65em; /*Tamaño de la fuente*/
+	padding: 0 10px;/*Crea espacio*/
+	background: #ffe4b7;  /*Color del fondo*/
+	border-left: 1px solid #ff8400; /*Color del borde izquierdo*/
+	border-right: 1px solid #ff8400;  /*Color del borde derecho*/
+	letter-spacing: 0.2em; /*espacio el texto*/
 }
 
 .inputBox:nth-child(1) input:not(:placeholder-shown) ~ span,
 .inputBox:nth-child(1) input:focus ~ span {
-	background: #ff8400;
-	color: #ffe4b7;
-	border-radius: 2px;
+	background: #ff8400;  /*Color del fondo*/
+	color: #ffe4b7; /*Color texto*/
+	border-radius: 2px;/*Radio del borde*/
 }
 
 .inputBox input:not(:placeholder-shown),
 .inputBox input:focus{
-	border: 1px solid #ff8400;
+	border: 1px solid #ff8400; /*Color del borde*/
 }
