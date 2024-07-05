@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alta Mesa</title>
+    <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
+    <link rel="stylesheet" href="../Estilos/EsVAL_ALT_MesaAdmin.css"><!--Para incluir los archivos de estilos CSS-->
 </head>
+
 <body>
+
 <?php
 include_once('./CrudMesa.php');
 include_once('./mesa.php');
