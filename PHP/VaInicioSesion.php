@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ERROR</title>
     <link rel="stylesheet" href="../Estilos/ValidacionInicioSesion.css">
+    <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
 </head>
+
 <body >
-<?php
+<br>
+<div class="Validacion">
+
+    <?php
 $usuario=$_POST["correo"];
 $contra=$_POST["contras"];
 
 if(empty($usuario) || empty($contra)){
     echo"<h1>ERROR: POR FAVOR INGRESA LOS DATOS CORRECTAMENTE</h1> <br>"; 
 
-    echo'<a href="../HTML/InicioDeSesión.html" >
-    <button>
-    REGRESAR
-    </button>
-    </a>';
+    echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
+    <input type="submit" class="btn-submit" value="REGRESAR" > <!--input para ir a la página QuienesSomos-->
+  </form></div>';
 }else{
 
 
@@ -27,5 +30,6 @@ header("Location:../HTML/Bienvenida.html");
     exit();
 }
 ?>
+</div>
 </body>
 </html>

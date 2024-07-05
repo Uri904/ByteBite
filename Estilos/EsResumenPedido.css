@@ -1,37 +1,45 @@
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(../IMG/Fondo_Pagina.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.encabezado{
+.encabezado {
     display: flex;
     justify-content: center;
 }
-.tabla{
-    width: 100%;
+
+.tabla {
+    width: 80%; /* Ajustar el ancho de la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+    background-color: white; /* Agregar un fondo blanco a la tabla */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tabla_section{
-    height: 650px;
+.tabla_section {
+    max-height: 650px;
     overflow: auto;
 }
 
-table{
+table {
     width: 100%;
     table-layout: fixed;
     min-width: 1000px;
     border-collapse: collapse;
+    background-color: white; /* Fondo blanco para toda la tabla */
 }
 
-thead th{
+thead th {
     position: sticky;
     top: 0;
     background-color: #ffb151;
@@ -39,20 +47,33 @@ thead th{
     font-size: 15px;
 }
 
-th,td{
+th, td {
     border-bottom: 1px solid #000000;
     padding: 10px 20px;
     word-break: break-all;
     text-align: center;
 }
 
-tr:hover td{
+/* Desactivar el hover para la primera fila (encabezado) */
+thead tr:hover {
+    background-color: #ffb151; /* Mantener el mismo color del encabezado */
+    color: #937aec; /* Mantener el mismo color del texto */
+    cursor: default; /* Mantener el cursor predeterminado */
+}
+
+/* Iluminar todas las celdas excepto la primera columna */
+tbody tr:hover td:not(:second-child) {
     color: #937aec;
     cursor: pointer;
     background-color: #ffb151;
 }
 
-button{
+/* Desactivar el hover para la primera columna */
+tbody tr td:second-child {
+    background-color: white; /* Fondo blanco para la primera columna */
+}
+
+button {
     outline: none;
     border: none;
     border-radius: 6px;
@@ -61,31 +82,42 @@ button{
     color: #ffb151;
 }
 
-td button:nth-child(1){
+td button:nth-child(1) {
     background-color: #f80000;
 }
 
-.botones{
+.botones {
     justify-content: space-evenly;
     display: flex;
 }
 
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    background: -webkit-linear-gradient(left, #f1992d, #ffb151); /* Crea un degradado de fondo */
+    -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+    -webkit-text-fill-color: transparent; /* Elimina el color de la fuente original */
+    font-family: 'Roboto', sans-serif; /* Elige una fuente moderna */
+    font-size: 2em; /* Aumenta aún más el tamaño de la fuente */
+    padding: 0.5em 1em; /* Agrega espacio alrededor del texto */
+    border-radius: 5px; /* Redondea las esquinas */
+  }
+
 .btn-submit {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #000000;
-	background: #ffcc66;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #000000;
+    background: #ffcc66;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
 }
 
 .btn-submit:hover {
-	background: #ffb151;
+    background: #ffb151;
     box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
     transform: scale(1.1);
     transition: 1s;

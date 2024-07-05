@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O</title>
+    <title>ERROR</title>
     <link rel="stylesheet" href="../Estilos/ValAdmin.css">
 </head>
 
 <body>
-<br>
-    
-<div class="validacion">
+<br>  
+<div class="valadmin">
 
     <?php
 
@@ -18,14 +17,14 @@
 
     if(empty($contra)){
 
-        echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1>";
-        echo'<a href="../HTML/InicioDeSesión.html" >
-    <br><br><br><br><br>
-    <button>
-    REGRESAR
-    </button>
-    </a>';
+        echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1> <br>";
+
+        echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
+        <input type="submit" class="btn-submit" value="REGRESAR" >
+      </form></div>';
     }else {
+
+
         header("Location:../HTML/bienvenida_admin.html");
     }
 

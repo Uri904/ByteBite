@@ -1,5 +1,5 @@
 body{
-    background-image: url(../IMG/Fondo_Pagina.jpeg);
+    background-image: url(../IMG/FondoVerde.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@ h1{
 	line-height: 40px;
 	border: none;
 	color: #000000;
-	background: #ffcc66;
+	background: #6ec313;
 	border-radius: 3px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -40,8 +40,8 @@ h1{
 }
 
 .btn-submit:hover {
-	background: #ffb151;
-    box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
+	background: #6ec313;
+    box-shadow: 1px 1px 0px 0px #80e414, 2px 2px 0px 0px #59d630, 3px 3px #66ce3a, 4px 4px 4px #74d85e;
     transform: scale(1.1);
     transition: 1s;
 }

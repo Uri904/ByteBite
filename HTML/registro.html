@@ -13,6 +13,8 @@
 <body>
     <img src="../IMG/Logo_ByteBite.png" alt="" style="display: block; margin: 0 auto;"> <!--logo de la empresa-->  
     <header><h1>REGISTRA MESA</h1></header>
+    
+    <div class="formulario">
 
     <form action="../SQL/VAL_ALT_RegistroMesa.php" method="POST"><!--formulario para registro de mesa-->  
         
@@ -38,13 +40,14 @@
        
         <br>
         <br>
-        <input type="submit" value="REGISTRAR MESA"><!--input para registrar la mesa-->  
+        <input type="submit" class="btn-submit" value="CREAR MESA"><!--input para registrar la mesa-->  
     </form>
-
-    <p id="pe">
-        <a href="">
-            <button>Volver</button><!--boton para regresar-->  
-        </a>
-    </p>
-</body>
+    </div>
+    <br><br>
+    <div class="formulario">
+    <form action="./mesaAdmin.html">
+        <input type="submit" class="btn-submit" value="VOLVER" ><!--input para ir a la página "QuienesSomos"-->
+      </form>
+      </div>
+  </body>
 </html>
