@@ -35,19 +35,19 @@ thead th{
     position: sticky;
     top: 0;
     background-color: #ffb151;
-    color: #8493a5;
+    color: #937aec;
     font-size: 15px;
 }
 
 th,td{
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #000000;
     padding: 10px 20px;
     word-break: break-all;
     text-align: center;
 }
 
 tr:hover td{
-    color: #0298cf;
+    color: #937aec;
     cursor: pointer;
     background-color: #ffb151;
 }
