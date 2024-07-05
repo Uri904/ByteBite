@@ -30,7 +30,7 @@ table{
 thead th{
     position: sticky;
     top: 0;
-    background-color: #f6f9fc;
+    background-color: #ffb151;
     color: #8493a5;
     font-size: 15px;
 }
@@ -45,7 +45,7 @@ th,td{
 tr:hover td{
     color: #0298cf;
     cursor: pointer;
-    background-color: #f6f9fc;
+    background-color: #ffb151;
 }
 
 button{
@@ -54,7 +54,7 @@ button{
     border-radius: 6px;
     cursor: pointer;
     padding: 10px;
-    color: #ffffff;
+    color: #ffb151;
 }
 
 td button:nth-child(1){
