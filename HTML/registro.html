@@ -3,46 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
-    <link rel="stylesheet" href="../Estilos/EsRegistro.css">
+    <title>Registrate</title><!--nombre de la pestaña-->
+    <link rel="stylesheet" href="../Estilos/EsRegistro.css"><!--Para incluir estilos-->
+    <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png" /><!--Icono de la pestaña -->
     <style>
-       
+    
     </style>
 </head>
 <body>
-    <img src="../IMG/Logo_ByteBite.png" alt="" style="display: block; margin: 0 auto;">   
+    <img src="../IMG/Logo_ByteBite.png" alt="" style="display: block; margin: 0 auto;"> <!--logo de la empresa-->  
     <header><h1>REGISTRA MESA</h1></header>
 
-    <form action="../SQL/VAL_ALT_RegistroMesa.php" method="POST">
+    <form action="../SQL/VAL_ALT_RegistroMesa.php" method="POST"><!--formulario para registro de mesa-->  
         
                  <div class="id inputBox">
-                    <input type="password" name="contra" placeholder=" ">
+                    <input type="password" name="contra" placeholder=" "><!--input para ingresar contraseña-->  
                     <span>Contraseña</span>
                   </div>
             
                    <br>
             
                 <div class="id inputBox">
-                    <input type="password" name="contraConfi" placeholder=" ">
+                    <input type="password" name="contraConfi" placeholder=" "><!--input para confirmar contraseña-->  
                     <span>Confirma Contraseña</span>
                   </div>
 
                   <br>
             
                 <div class="id inputBox">
-                    <input type="password" name="contraAdmin" placeholder=" ">
+                    <input type="password" name="contraAdmin" placeholder=" "><!--input para ingresar contraseña ADMIN-->  
                     <span>Contraseña Admin</span>
                   </div>
             
        
         <br>
         <br>
-        <input type="submit" value="REGISTRAR MESA">
+        <input type="submit" value="REGISTRAR MESA"><!--input para registrar la mesa-->  
     </form>
 
     <p id="pe">
         <a href="">
-            <button>Volver</button>
+            <button>Volver</button><!--boton para regresar-->  
         </a>
     </p>
 </body>
