@@ -131,7 +131,11 @@ p{
 }
 
 .botonesA{
-    justify-content: space-evenly;
+    justify-content: center;
     display: flex;
-    align-items: center;
+}
+
+.conboton{
+    justify-content: center;
+    display: flex;
 }
