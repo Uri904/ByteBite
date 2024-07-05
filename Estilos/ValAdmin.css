@@ -13,10 +13,6 @@ h1{
 text-align: center;
 margin-top: 20%;
 }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 .btn-submit {
 	padding: 0 20px;
 	height: 40px;
@@ -30,10 +26,6 @@ margin-top: 20%;
 	cursor: pointer;
 	transition: .3s ease all;
 }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 .btn-submit:hover {
 	background: #ff5151;
     box-shadow: 1px 1px 0px 0px #df1a1a, 2px 2px 0px 0px #d63030, 3px 3px #ce3a3a, 4px 4px 4px #d85e5e;
@@ -41,15 +33,8 @@ margin-top: 20%;
     transition: 1s;
 }
 
-<<<<<<< Updated upstream
 
 .botones{
     justify-content: space-evenly;
     display: flex;
 }
-=======
-.botones{
-    justify-content: space-evenly;
-    display: flex;
-}
->>>>>>> Stashed changes

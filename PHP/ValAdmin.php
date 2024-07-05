@@ -17,7 +17,6 @@
 
     if(empty($contra)){
 
-<<<<<<< Updated upstream
         echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1> <br>";
 
         echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
@@ -26,13 +25,6 @@
     }else {
 
 
-=======
-        echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1>";
-        echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
-        <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
-      </form></div>';
-        }else {
->>>>>>> Stashed changes
         header("Location:../HTML/bienvenida_admin.html");
     }
 
