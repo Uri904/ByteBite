@@ -80,7 +80,7 @@ body{
 }
 .swiper-slide{
     width: 300px;
-    height: 425px;
+    height: 475px;
     background-color: #ffbb33;
     box-shadow: 0 0 20px #232323;
     padding: 40px;
@@ -98,20 +98,20 @@ body{
 }
 
 .platillo-txt span{
-    font-size: 14px;
+    font-size: 16px;
     color: #232323;
     font-weight: bold;
 }
 
 .platillo-txt h3{
-    font-size: 20px;
+    font-size: 22px;
     color: 232323;
     text-transform: uppercase;
 }
 
 
 .platillo-txt p{
-    font-size: 16px;
+    font-size: 18px;
     color: #232323;
 }
 
