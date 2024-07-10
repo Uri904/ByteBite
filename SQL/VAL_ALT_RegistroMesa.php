@@ -27,7 +27,7 @@ if(empty($contra) || empty($contraConfi) || empty($contraAdmin)){
     $objMes=new mesa($contra,$contraConfi,$contraAdmin);
     $crud= new CrudMesa();
     $crud->readMesa($objMes);
-    header("Location:../HTML/PedidosAdmin.html");
+    header("Location:../HTML/mesaAdmin.html");
 }
 
 ?>

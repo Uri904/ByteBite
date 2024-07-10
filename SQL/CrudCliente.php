@@ -21,7 +21,7 @@ if($statement->execute()){
 
     }
 }
-$objC=new cliente(1,'Brian');
+$objC=new cliente(1,'uri');
 $crud= new CrudCliente();
 $crud->readCliente($objC);
 ?>
