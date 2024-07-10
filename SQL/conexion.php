@@ -8,7 +8,7 @@ class Conexion{
         private $bd = BASE;
         private $password = CONTRASEÑA;
         private $port = PUERTO;
-        private $conect;
+        private $conect; 
 
     function __construct(){
         try{
@@ -25,6 +25,6 @@ class Conexion{
         return $this->conect;
     }
 }
-//$objc = new conexion();
+$objc = new conexion();
 
 ?>
