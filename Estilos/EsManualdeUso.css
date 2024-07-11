@@ -27,13 +27,26 @@ img{
     height: 50px;
 }
 
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 450px;
+    font-size: 28px;
+}
+
 .align{
     justify-content: center;
     display: flex;
 }
 
 .contenido{
-    width: 40%;
+    width: 75%;
     border-bottom: 10px;
     float: left;
     background-color: #ffdc97;
