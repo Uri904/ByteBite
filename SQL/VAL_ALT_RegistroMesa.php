@@ -13,23 +13,31 @@
 <?php
 include_once('./CrudMesa.php');
 include_once('./mesa.php');
-$contra=$_POST['contra'];
-$contraConfi=$_POST['contraConfi'];
-$contraAdmin=$_POST['contraAdmin'];
 
-if(empty($contra) || empty($contraConfi) || empty($contraAdmin)){
-    echo"<h1>ERROR: POR FAVOR LLENA LOS CAMPOS CORRECTAMENTE</h1><br>";
+$contra = $_POST['contra'];
+$contraConfi = $_POST['contraConfi'];
+$contraAdmin = $_POST['contraAdmin'];
+
+if (empty($contra) || empty($contraConfi) || empty($contraAdmin)) {
+    echo "<h1>ERROR: POR FAVOR LLENA LOS CAMPOS CORRECTAMENTE</h1><br>";
 
     echo '<div class="botones"><form action="../HTML/registro.html">
     <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
-  </form></div>';
-}else{
-    $objMes=new mesa($contra,$contraConfi,$contraAdmin);
-    $crud= new CrudMesa();
-    $crud->readMesa($objMes);
-    header("Location:../HTML/mesaAdmin.html");
-}
+    </form></div>';
+} else {
+    if ($contraConfi !== $contra || $contraAdmin !== "root") {
+        echo "<h1>ERROR: Las contraseñas no coinciden o la contraseña de administrador es incorrecta</h1><br>";
 
+        echo '<div class="botones"><form action="../HTML/registro.html">
+        <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
+        </form></div>';
+    } else {
+        $objMes = new mesa($contra, $contraConfi, $contraAdmin);
+        $crud = new CrudMesa();
+        $crud->readMesa($objMes);
+        header("Location: ../HTML/mesaAdmin.html");
+    }
+}
 ?>
 </body>
 </html>

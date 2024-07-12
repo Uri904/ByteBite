@@ -22,7 +22,7 @@
   </header>
 
   <div class="formulario"><!--Formulario para Iniciar Sesión-->
-    <form action="../PHP/VaInicioSesion.php" method="post" >
+    <form action="../SQL/VaInicioSesion.php" method="post" >
       
       <div class="id inputBox">
         <input type="number" name="id_mesa" placeholder=" " min="1"><!--Input para ingresar un correo -->
@@ -55,7 +55,7 @@
         <!--Ventana Emergente para iniciar sesion como Administrador-->
           <div class="overlay" id="overlay">
             <div class="popup" id="popup">
-              <a href="./InicioDeSesión.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+              <a href="../SQL/VaInicioSesion.php" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
               <h3>Modo Administrador</h3>
               <h4>Contraseña Requerida</h4>
 
@@ -64,7 +64,7 @@
               <!--Agregar link para mandar registro a PHP-->
 
               <!--Formulario para Iniciar sesion como admin-->
-              <form action="../PHP/ValAdmin" method="post">
+              <form action="../PHP/ValAdmin.php" method="post">
                 <div class="contenedor-inputs">
                   <input type="password" placeholder="contraseña" name="contra"><!--Input para ingresar contraseña de admin-->
                 </div>

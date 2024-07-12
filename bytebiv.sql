@@ -100,7 +100,7 @@ FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido)on UPDATE CASCADE,
 FOREIGN KEY (id_platillo) REFERENCES platillo (id_platillo)on UPDATE CASCADE);
 
 
-INSERT INTO administrador (contraseña)
+INSERT INTO administrador (contra)
 VALUES
 ('root');
 

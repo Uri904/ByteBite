@@ -22,8 +22,16 @@ if($statement->execute()){
     }
 
     }
+    function readMes($id,$contra){
+        $sql="SELECT * FROM mesa WHERE id_mesa=? AND  contra=?";
+        $statement=parent::getConexion()->prepare($sql);
+        $statement->bindParam(1,$id);
+        $statement->bindParam(2,$contra);
+        $statement->execute();
+        return $statement;
+    }
 }
 //$objMes=new mesa('HolaQueHac3','HolaQueHac3','root');
-//$crud= new CrudMesa();
+$crud= new CrudMesa();
 //$crud->readMesa($objMes);
 ?>

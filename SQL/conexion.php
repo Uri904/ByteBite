@@ -15,7 +15,7 @@ class Conexion{
             $dns ="pgsql:host=$this->server;port=$this->port;dbname=$this->bd";
             $this->conect = new PDO($dns,$this->user,$this->password);
             $this->conect->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            echo"<br>conectado a la base de datos Pagina_Integradora...";
+           // echo"<br>conectado a la base de datos Pagina_Integradora...";
 
         }catch(PDOException $objE){
             echo "<br>ERROR DURANTE LA CONEXION". $objE->getMessage();
@@ -25,6 +25,6 @@ class Conexion{
         return $this->conect;
     }
 }
-$objc = new conexion();
+//$objc = new conexion();
 
 ?>

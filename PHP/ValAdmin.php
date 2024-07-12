@@ -17,6 +17,7 @@
 
     if(empty($contra)){
 
+
         echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1> <br>";
 
         echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
