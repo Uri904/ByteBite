@@ -18,14 +18,14 @@
     if (empty($contra)) {
         echo "<h1>ERROR: POR FAVOR LLENA LOS CAMPOS CORRECTAMENTE</h1><br>";
     
-        echo '<div class="botones"><form action="../HTML/registro.html">
+        echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
         <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
         </form></div>';
     } else {
         if ($contra !== "root") {
             echo "<h1>ERROR: La contraseña no coincide con la del administrador</h1><br>";
     
-            echo '<div class="botones"><form action="../HTML/registro.html">
+            echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
             <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
             </form></div>';
         } else {
