@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERROR</title>
-    <link rel="stylesheet" href="../Estilos/ValidacionInicioSesion.css">
+    <link rel="stylesheet" href="../Estilos/ValAdmin.css">
 </head>
 <body>
 <?php
@@ -14,11 +14,11 @@ include_once("./CrudMesa.php");
 
  if(empty($contra) || empty($id)){
 
-    echo"<h1>ERROR: POR FAVOR LLENA EL CAMPO SOLICITADO</h1> <br>";
-
+    echo "<h1>ERROR: La contraseña y/o ID son incorrectas</h1><br>";
+    
     echo '<div class="botones"><form action="../HTML/InicioDeSesión.html">
-    <input type="submit" class="btn-submit" value="REGRESAR" >
-  </form></div>';
+    <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
+    </form></div>';
 
 
 }else {
