@@ -7,14 +7,15 @@ class CrudPedido extends Conexion{
         parent::__construct();
     }
     function readPedido($Pedido){
-        $sql = "INSERT INTO Pedido(costo,fecha,id_mesa,id_cliente,estado)
+        $sql = "INSERT INTO Pedido(id_mesa,id_cliente,costo,fecha,estado)
         VALUES(?,now(),?,?,?)";
 
 $statement = parent::getConexion()->prepare($sql);
-$statement->bindParam(1,$Pedido->costo);
-$statement->bindParam(2,$Pedido->id_mesa);
-$statement->bindParam(3,$Pedido->id_cliente);
-$statement->bindParam(4,$Pedido->estado);
+$statement->bindParam(1,$Pedido->id_mesa);
+$statement->bindParam(2,$Pedido->id_cliente);
+$statement->bindParam(3,$Pedido->costo);
+$statement->bindParam(4,$Pedido->fecha);
+$statement->bindParam(5,$Pedido->estado);
 
 if($statement->execute()){
     echo"SE REALIZO CON EXITO EL REGISTRO";
@@ -22,9 +23,15 @@ if($statement->execute()){
     echo"HUBO UN ERROR DURANTE EL REGISTRO";
     }
 }
+function consultarPedido(){
+    $sql = "SELECT * FROM Pedido";
+    $statement = parent::getConexion()->prepare($sql);//statmen recibe los resultados despúes de ejecutar una sentencia sql
+    $statement->execute();
+    return $statement;
+}
 }
 
-$objP=new pedido(1,2500,'2024-03-03',1,1,'Finalizado');
-$crud= new CrudPedido();
-$crud->readPedido($objP);
+//$objP=new pedido(1,2500,'2024-03-03',1,1,'Finalizado');
+//$crud= new CrudPedido();
+//$crud->readPedido($objP);
 ?>
