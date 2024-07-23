@@ -54,7 +54,13 @@
                     <td>".$Mesa->contra."</td>
                     <td>".$Mesa->conficontra."</td>
                     <td>".$Mesa->contraadmin."</td>
-                    <td> <button><i class='fa-solid fa-trash'></i></button><!--Boton para eliminar--> </td>
+                    <td>
+                      <form action='eliminar_mesa.php' method='post'>
+                   <input type='hidden' name='id_mesa'value='".$Mesa->id_mesa."'>
+                   <button type='submit' class='btn-submit' name='delete'>Eliminar</button>
+                   </form>
+                
+                    </td>
                 </tr>
                 ";
             }
