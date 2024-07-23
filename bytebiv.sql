@@ -30,10 +30,10 @@ nombre_cliente VARCHAR(40) NOT NULL);
 
 CREATE TABLE pedido(
 id_pedido SERIAL PRIMARY KEY,
-costo DECIMAL (10,2) NOT NULL,
-fecha DATE NOT NULL,
 id_mesa int,
 id_cliente int NOT NULL,
+costo DECIMAL (10,2) NOT NULL,
+fecha DATE NOT NULL,
 estado VARCHAR(20),
 FOREIGN KEY (id_mesa) REFERENCES mesa (id_mesa)on UPDATE CASCADE,
 FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)on UPDATE CASCADE);

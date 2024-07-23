@@ -22,16 +22,16 @@ include_once("./CrudMesa.php");
 
 
 }else {
-    $statement=$crud->readMes($id, $contra);   
+    $statement=$crud->readMesas($id, $contra);   
     $res=$statement->rowCount();
-    if ($res == 0){
+    if ($res > 0){
         
+        header("Location:../HTML/Bienvenida.html");
+
+    }else {
         echo "<br>Sesión NO Iniciada";
         echo "<br><a href='../HTML/InicioDeSesión.html'>Regresar al Inicio</a>";
-    }else {
-        
                     
-        header("Location:../HTML/Bienvenida.html");
     }
 }
 

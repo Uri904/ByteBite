@@ -7,7 +7,7 @@ class CrudMesa extends Conexion{
         parent::__construct();
     }
     function readMesa($Mesa){
-        $sql = "INSERT INTO Mesa(contra,confiContra,contraAdmin)
+        $sql = "INSERT INTO mesa(contra,confiContra,contraAdmin)
         VALUES(?,?,?)"; 
 
 $statement = parent::getConexion()->prepare($sql);
@@ -22,14 +22,22 @@ if($statement->execute()){
     }
 
     }
-    function readMes($id,$contra){
-        $sql="SELECT * FROM mesa WHERE id_mesa=? AND  contra=?";
+    //validacion de Inicio de sesión
+    function readMesas($id,$contra){
+        $sql="SELECT * FROM Mesa WHERE id_mesa=? AND  contra=?";
         $statement=parent::getConexion()->prepare($sql);
         $statement->bindParam(1,$id);
         $statement->bindParam(2,$contra);
         $statement->execute();
         return $statement;
     }
+
+    function consultarMesa(){
+        $sql = "SELECT * FROM Mesa";
+        $statement = parent::getConexion()->prepare($sql);//statmen recibe los resultados despúes de ejecutar una sentencia sql
+        $statement->execute();
+        return $statement;
+}
 }
 //$objMes=new mesa('HolaQueHac3','HolaQueHac3','root');
 $crud= new CrudMesa();
