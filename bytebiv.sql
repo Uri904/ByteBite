@@ -99,7 +99,29 @@ cantidad int NOT NULL,
 FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido)on UPDATE CASCADE,
 FOREIGN KEY (id_platillo) REFERENCES platillo (id_platillo)on UPDATE CASCADE);
 
+-------------------------------------------------BITACORA----------------------------------------------------------
+CREATE TABLE cambios(
+timestamp_ TIMESTAMP WITH TIME ZONE default now(),
+nombre_disparador text,
+tipo_disparador text,
+nivel_disparador text,
+comando text
+);
 
+CREATE OR REPLACE FUNCTION grabar_registros() RETURNS TRIGGER AS $grabar_registros$
+DECLARE
+BEGIN
+INSERT INTO cambios (nombre_disparador, tipo_disparador, nivel_disparador, comando)
+values (TG_NAME,TG_WHEN,TG_LEVEL,TG_OP);
+return null;
+end;
+$grabar_registros$ LANGUAGE plpgsql;
+
+CREATE TRIGGER grabar_registros AFTER INSERT OR UPDATE OR delete
+on mesa FOR EACH STATEMENT
+EXECUTE PROCEDURE grabar_registros();
+
+-----------------------------------------------------------------------------------------------------------------------
 INSERT INTO administrador (contra)
 VALUES
 ('root');

@@ -38,6 +38,21 @@ if($statement->execute()){
         $statement->execute();
         return $statement;
 }
+function eliminarMesa($id_mesa) {
+    try {
+        $sql = "DELETE FROM mesa WHERE id_mesa = :id";
+        $statement = $this->getConexion()->prepare($sql);
+        $statement->bindParam(':id', $id_mesa, PDO::PARAM_INT); // Asegúrate de especificar el tipo de dato si es necesario
+
+        if ($statement->execute()) {
+            echo "<br>ELIMINADO";
+        } else {
+            echo "<br>ERROR... NO ELIMINADO";
+        }
+    } catch (PDOException $e) {
+        echo "Error al eliminar: " . $e->getMessage();
+    }
+}
 }
 //$objMes=new mesa('HolaQueHac3','HolaQueHac3','root');
 $crud= new CrudMesa();
