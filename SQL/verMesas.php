@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../Estilos/EsmesaAdmin.css"><!--Archivo de estilos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><!--Archivo de estilos-->
     <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png"><!--Icono de la pestaña-->
+    <script type="text/javascript">
+        function confirmar(){
+            return confirm('¿Estas seguro?, Se eliminarán los datos');
+        }
+        </script>
 </head>
 
 <body>
@@ -55,9 +60,9 @@
                     <td>".$Mesa->conficontra."</td>
                     <td>".$Mesa->contraadmin."</td>
                     <td>
-                      <form action='eliminar_mesa.php' method='post'>
+                      <form action='eliminar_mesa.php' method='post' onclick='return confirmar()'>
                    <input type='hidden' name='id_mesa'value='".$Mesa->id_mesa."'>
-                   <button type='submit' class='btn-submit' name='delete'>Eliminar</button>
+                   <button type='submit' class='btn-submit' name='delete' >Eliminar</button>
                    </form>
                 
                     </td>
