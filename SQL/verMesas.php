@@ -43,6 +43,7 @@
                     <td>Confirmar Contraseña</td>
                     <td>Contraseña admin</td>
                     <td>Eliminar</td> 
+                    <td>Actualizar</td> 
                 </tr>
             </thead>
 
@@ -59,16 +60,19 @@
                     <td>".$Mesa->contra."</td>
                     <td>".$Mesa->conficontra."</td>
                     <td>".$Mesa->contraadmin."</td>
+                    
                     <td>
-                      <form action='eliminar_mesa.php' method='post' onclick='return confirmar()'>
-                   <input type='hidden' name='id_mesa'value='".$Mesa->id_mesa."'>
-                   <button type='submit' class='btn-submit' name='delete' >Eliminar</button>
-                   </form>
-                
+                        <form action='eliminar_mesa.php' method='post' onclick='return confirmar()'>
+                        <input type='hidden' name='id_mesa'value='".$Mesa->id_mesa."'>
+                        <button type='submit' class='btn-submit' name='delete' >Eliminar</button>
+                        </form>
                     </td>
+
+
                      <td>
-                     <a href='./actMesa.php?id_mesa=".$Mesa->id_mesa."'>Actualizar</a>
-                
+                     <button class='btn-submit'>
+                        <a href='./actMesa.php?id_mesa=".$Mesa->id_mesa."'>Actualizar</a>
+                     </button>
                     </td>
                 </tr>
                 ";
