@@ -61,6 +61,10 @@
                    </form>
                 
                     </td>
+                     <td>
+                     <a href='./actMesa.php?id_mesa=".$Mesa->id_mesa."'>Actualizar</a>
+                
+                    </td>
                 </tr>
                 ";
             }

@@ -1,14 +1,16 @@
 <?php
 
 class mesa{
+    public $id_mesa;
     public $contra;
-    public $confiContra;
-    public $confiAdmin;
+    public $conficontra;
+    public $confiadmin;
 
-    function __construct($contra,$confiContra,$contraAdmin){
+    function __construct($id_mesa,$contra,$conficontra,$contraadmin){
+        $this->id_mesa=$id_mesa;
         $this->contra=$contra;
-        $this->confiContra=$confiContra;
-        $this->contraAdmin=$contraAdmin;
+        $this->conficontra=$conficontra;
+        $this->contraadmin=$contraadmin;
         echo "<br>Atributos inicializados ...";
         }
         
