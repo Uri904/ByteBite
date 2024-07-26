@@ -32,7 +32,7 @@ if (empty($contra) || empty($contraConfi) || empty($contraAdmin)) {
         <input type="submit" class="btn-submit" value="REGRESAR" ><!--input para ir a la página "QuienesSomos"-->
         </form></div>';
     } else {
-        $objMes = new mesa($contra, $contraConfi, $contraAdmin);
+        $objMes = new mesa2($contra, $contraConfi, $contraAdmin);
         $crud = new CrudMesa();
         $crud->readMesa($objMes);
         header("Location: ./verMesas.php");

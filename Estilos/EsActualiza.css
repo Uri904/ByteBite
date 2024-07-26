@@ -1,0 +1,47 @@
+body{
+    background-image: url(../IMG/FondoVerde.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    height: 250px;
+    width: 350px;
+    border-radius: 50%;
+    border: 5px solid saddlebrown;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size:40px;
+}
+
+.botones{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #000000;
+	background: #6ec313;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.btn-submit:hover {
+	background: #6ec313;
+    box-shadow: 1px 1px 0px 0px #80e414, 2px 2px 0px 0px #59d630, 3px 3px #66ce3a, 4px 4px 4px #74d85e;
+    transform: scale(1.1);
+    transition: 1s;
+}
