@@ -74,10 +74,6 @@ button {
     color: #ffffff;
 }
 
-td button:nth-child(1) {
-    background-color: #f80000;
-}
-
 .botones {
     justify-content: space-evenly;
     display: flex;
@@ -102,4 +98,9 @@ td button:nth-child(1) {
     box-shadow: 1px 1px 0px 0px #80e414, 2px 2px 0px 0px #59d630, 3px 3px #66ce3a, 4px 4px 4px #74d85e;
     transform: scale(1.1);
     transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
 }

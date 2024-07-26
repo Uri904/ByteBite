@@ -1,4 +1,4 @@
-<?php
+ <?php
 
     define('SERVIDOR','localhost');
     define('USUARIO','postgres');
