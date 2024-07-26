@@ -16,6 +16,7 @@ $resulset = $statement->fetch(PDO::FETCH_OBJ);
     <link rel="stylesheet" href="../Estilos/EsActualiza.css">
 </head>
 <body>
+    
     <center>
     <h1>actualizar mesa</h1>
     <?php

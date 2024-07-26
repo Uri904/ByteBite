@@ -27,8 +27,7 @@
         //$crud = new CrudMesa();
         $statement = $crud->consultarMesa();
         $res=$statement->rowCount();
-        echo "<br> Encontrados : $res";
-        echo "</center>";
+      
     ?>
     
     <br><br>
