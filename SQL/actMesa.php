@@ -39,8 +39,9 @@ $resulset = $statement->fetch(PDO::FETCH_OBJ);
         <input type="text" name="contraadmin" id="contraadmin" value='<?php echo $resulset->contraadmin;  ?> ' readonly>
     </p>
 
-    <input type="submit" VALUE="actualiza">
+    <input type="submit" class="btn-submit" VALUE="Actualizar">
 
     </form>
+
 </body>
 </html>

@@ -63,14 +63,18 @@
                     <td>
                         <form action='eliminar_mesa.php' method='post' onclick='return confirmar()'>
                         <input type='hidden' name='id_mesa'value='".$Mesa->id_mesa."'>
-                        <button type='submit' class='btn-submit' name='delete' >Eliminar</button>
+                        <button type='submit' class='btn-submit-icon' name='delete' >
+                          <i class='fa-solid fa-trash'></i>
+                        </button>
                         </form>
                     </td>
 
 
                      <td>
-                     <button class='btn-submit'>
-                        <a href='./actMesa.php?id_mesa=".$Mesa->id_mesa."'>Actualizar</a>
+                     <button class='btn-submit-icon'>
+                        <a href='./actMesa.php?id_mesa=".$Mesa->id_mesa."'>
+                          <i class='fa-regular fa-pen-to-square'></i>
+                        </a>
                      </button>
                     </td>
                 </tr>
@@ -79,7 +83,7 @@
             }else {
                 echo "
                 <tr>
-                <th COLSPAN = '5'>
+                <th COLSPAN = '6'>
                 <marquee>NO HAY REGISTROS</marquee>
                 </tr>";
 

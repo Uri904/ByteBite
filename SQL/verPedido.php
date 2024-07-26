@@ -34,12 +34,11 @@
             <thead>
                 <tr><!--Encabezados de la tabla-->               
                     <td>id_pedido</td>
-                    <td>id_Mesa</td>
-                    <td>id_Cliente</td>
+                    <td>Mesa</td>
+                    <td>Cliente</td>
                     <td>Costo</td>
                     <td>Fecha</td>
                     <td>Estado</td> 
-                    <td>Eliminar</td> 
                 </tr>
             </thead>
 

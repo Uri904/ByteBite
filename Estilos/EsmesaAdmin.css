@@ -104,3 +104,13 @@ a{
     text-decoration: none;
     color: #000000;
 }
+
+.btn-submit-icon{
+    background-color: #ffffff;
+    border-radius: 10px solid #000000;
+    color: #ff0000;
+}
+
+.fa-regular{
+    color: rgb(25, 0, 255);
+}
