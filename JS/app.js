@@ -175,23 +175,27 @@ function ocultarCarrito(){
 }
 //Actualizamos el total de Carrito
 function actualizarTotalCarrito(){
-    //seleccionamos el contenedor carrito
+    // Selecciona el contenedor del carrito
     var carritoContenedor = document.getElementsByClassName('carrito')[0];
     var carritoItems = carritoContenedor.getElementsByClassName('carrito-item');
     var total = 0;
-    //recorremos cada elemento del carrito para actualizar el total
-    for(var i=0; i< carritoItems.length;i++){
+    
+    // Recorre cada elemento del carrito para actualizar el precio
+    for (var i = 0; i < carritoItems.length; i++) {
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
-        //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
+        
+        // Se quita el símbolo de peso y las comas de miles, dejando el punto decimal
+        var precio = parseFloat(precioElemento.innerText.replace('$', '').replace(/,/g, ''));
+        
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
-        console.log(precio);
         var cantidad = cantidadItem.value;
+        
         total = total + (precio * cantidad);
     }
-    total = Math.round(total * 100)/100;
+    
+    // Para redondear los decimales a solo .00
+    total = Math.round(total * 100) / 100;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
-
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }

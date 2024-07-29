@@ -1,5 +1,62 @@
+<?php
+// Conectar a la base de datos
+$dsn = 'pgsql:host=localhost;dbname=bytebite';
+$username = 'postgres';
+$password = 'root';
+$options = [];
+
+try {
+    $pdo = new PDO($dsn, $username, $password, $options);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo 'Conexión fallida: ' . $e->getMessage();
+}
+
+// Manejar la adición al carrito
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_platillo'])) {
+    $precio_platillo = $_POST['precio'];
+    $id_platillo = $_POST['id_platillo'];
+    $cantidad = 1; // Ajusta esto si el usuario puede seleccionar una cantidad diferente
+
+    // Insertar un nuevo pedido
+    $sql_pedido = 'INSERT INTO pedido (id_mesa, costo, fecha, estado) VALUES (:id_mesa, :costo, :fecha, :estado) RETURNING id_pedido';
+    $statement_pedido = $pdo->prepare($sql_pedido);
+    $statement_pedido->execute([
+        ':id_mesa' => 1, // Ajusta según sea necesario
+        ':costo' => $precio_platillo * $cantidad,
+        ':fecha' => date('Y-m-d'),
+        ':estado' => 'Nuevo'
+    ]);
+
+    // Obtener el id_pedido del nuevo pedido
+    $id_pedido = $statement_pedido->fetchColumn();
+
+    // Insertar en la tabla 'contiene'
+    $sql_contiene = 'INSERT INTO contiene (id_pedido, id_platillo, cantidad) VALUES (:id_pedido, :id_platillo, :cantidad)';
+    $statement_contiene = $pdo->prepare($sql_contiene);
+    $statement_contiene->execute([
+        ':id_pedido' => $id_pedido,
+        ':id_platillo' => $id_platillo,
+        ':cantidad' => $cantidad
+    ]);
+
+    echo 'El platillo se ha agregado al carrito correctamente.';
+
+    // Redirigir de vuelta a la misma página para evitar el reenvío del formulario
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    exit();
+}
+
+// Obtener datos de los platillos
+$sql_platillos = 'SELECT id_platillo, nombre_platillo, precio FROM platillo';
+$statement_platillos = $pdo->prepare($sql_platillos);
+$statement_platillos->execute();
+$platillos = $statement_platillos->fetchAll(PDO::FETCH_OBJ);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +65,12 @@
     <link rel="stylesheet" href="../Estilos/estilo.css">
     <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
     <script src="../JS/app.js" async></script>
-    <title>Platillos </title>
+    <title>Platillos</title>
 </head>
+
 <body>
 
-<header class="header">
+    <header class="header">
         <div class="encabezado">
             <nav class="nav">
                 <a href="../HTML/Bienvenida.html" class="logo nav-link">ByteBite</a><!--Link para regresar a la página de "Bienvenida"-->
@@ -28,38 +86,33 @@
 
     <header>
         <h1>Platillo</h1>
-       
-       <?php
-    echo "<center><span>";
-        include_once('CrudPlatillo.php');
 
-        $crud = new CrudPlatillo();
-        $statement = $crud->consultarPlatillo();
-        $res=$statement->rowCount();
-        echo "<br> Disponibles : $res";
+        <?php
+        echo "<center><span>";
+        echo "<br> Disponibles : " . count($platillos);
         echo "</center></span>";
-    ?>
+        ?>
     </header>
-    
-    <section class="contenedor">
-        <!-- Contenedor de elementos -->
-        <div class="contenedor-items">
-    <?php
 
-        $resultados = $statement->fetchAll(PDO::FETCH_OBJ);
-        foreach($resultados as $comida){
-        echo "
+    <section class="contenedor">
+        <div class="contenedor-items">
+            <?php
+            foreach ($platillos as $platillo) {
+                echo "
             <div class='item'>
-                <span class='titulo-item'>".$comida -> nombre_platillo."</span>
-                <img src='../IMG/Menu/platillos/postres/Cheesecake.png' alt='' class='img-item'>
-                <span class='precio-item'>$".$comida -> precio."</span>
-                <button class='boton-item'>Agregar</button>
+                <span class='titulo-item'>" . htmlspecialchars($platillo->nombre_platillo) . "</span>
+                <img src='../IMG/Menu/platillos/" . htmlspecialchars($platillo->nombre_platillo) . ".png' alt='' class='img-item'>
+                <span class='precio-item'>$" . htmlspecialchars($platillo->precio) . "</span>
+                <form method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>
+                    <input type='hidden' name='id_platillo' value='" . htmlspecialchars($platillo->id_platillo) . "'>
+                    <input type='hidden' name='precio' value='" . htmlspecialchars($platillo->precio) . "'>
+                    <button type='submit' class='boton-item'>Agregar</button>
+                </form>
             </div>
             ";
-        }
-    ?>
+            }
+            ?>
         </div>
-
 
         <!-- Carrito de Compras -->
         <div class="carrito" id="carrito">
@@ -104,13 +157,12 @@
             <div class="carrito-total">
                 <div class="fila">
                     <strong>Tu Total</strong>
-                    <span class="carrito-precio-total">
-                        $0.00
-                    </span>
+                    <span class="carrito-precio-total">$0.00</span>
                 </div>
-                <button class="btn-pagar">Pedir <i class="fa-solid fa-bag-shopping"></i> </button>
+                <button class="btn-pagar">Pedir <i class="fa-solid fa-bag-shopping"></i></button>
             </div>
         </div>
     </section>
 </body>
+
 </html>
