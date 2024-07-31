@@ -86,6 +86,7 @@ $bebidas = $statement_bebidas->fetchAll(PDO::FETCH_OBJ);
             <ul class="nav-menu">
                 <li class="nav-menu-item"><a href="./verPlatillo.php" class="nav-menu-link nav-link">Platillo</a></li>
                 <li class="nav-menu-item"><a href="../HTML/Crear_pedido.html" class="nav-menu-link nav-link">Regresar</a></li>
+                <li class="nav-menu-item"><a href="../HTML/ResumenPedido.php" class="nav-menu-link nav-link">ver pedido</a></li><!--link para regresar a crear un pedido-->
             </ul>
         </nav>
     </div>
