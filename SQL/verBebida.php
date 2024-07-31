@@ -72,6 +72,7 @@ $bebidas = $statement_bebidas->fetchAll(PDO::FETCH_OBJ);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Estilos/estilo.css">
+    <link rel="stylesheet" href="../Estilos/EsBebidas.css">
     <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
     <script src="../JS/app.js" async></script>
     <title>Bebidas</title>
@@ -83,7 +84,6 @@ $bebidas = $statement_bebidas->fetchAll(PDO::FETCH_OBJ);
         <nav class="nav">
             <a href="../HTML/Bienvenida.html" class="logo nav-link">ByteBite</a>
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="./verBebida.php" class="nav-menu-link nav-link">Bebida</a></li>
                 <li class="nav-menu-item"><a href="./verPlatillo.php" class="nav-menu-link nav-link">Platillo</a></li>
                 <li class="nav-menu-item"><a href="../HTML/Crear_pedido.html" class="nav-menu-link nav-link">Regresar</a></li>
             </ul>
@@ -109,7 +109,9 @@ $bebidas = $statement_bebidas->fetchAll(PDO::FETCH_OBJ);
             echo "
             <div class='item'>
                 <span class='titulo-item'>" . htmlspecialchars($bebida->nombre_bebida) . "</span>
-                <img src='../IMG/Menu/bebidas/" . htmlspecialchars($bebida->nombre_bebida) . ".png' alt='' class='bebida-img'>
+                <img src='../IMG/Menu/bebidas/" . htmlspecialchars($bebida->nombre_bebida) . ".png' alt='' class='bebida-img' width=125px height=125px align='center'
+
+>
                 <span class='precio-item'>$" . htmlspecialchars($bebida->precio) . "</span>
                 <form method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>
                     <input type='hidden' name='id_bebida' value='" . htmlspecialchars($bebida->id_bebida) . "'>

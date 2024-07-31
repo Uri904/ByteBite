@@ -63,6 +63,7 @@ $platillos = $statement_platillos->fetchAll(PDO::FETCH_OBJ);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Estilos/estilo.css">
+    <link rel="stylesheet" href="../Estilos/EsBebidas.css">
     <link rel="shortcut icon" href="../IMG/Logo_ByteBite.png">
     <script src="../JS/app.js" async></script>
     <title>Platillos</title>
@@ -101,7 +102,7 @@ $platillos = $statement_platillos->fetchAll(PDO::FETCH_OBJ);
                 echo "
             <div class='item'>
                 <span class='titulo-item'>" . htmlspecialchars($platillo->nombre_platillo) . "</span>
-                <img src='../IMG/Menu/platillos/" . htmlspecialchars($platillo->nombre_platillo) . ".png' alt='' class='img-item'>
+                <img src='../IMG/Menu/platillos/" . htmlspecialchars($platillo->nombre_platillo) . ".png' alt='' class='img-item' width=125px height=125px align='center'>
                 <span class='precio-item'>$" . htmlspecialchars($platillo->precio) . "</span>
                 <form method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>
                     <input type='hidden' name='id_platillo' value='" . htmlspecialchars($platillo->id_platillo) . "'>
