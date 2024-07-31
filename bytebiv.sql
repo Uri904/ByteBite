@@ -42,7 +42,7 @@ CREATE TABLE bebida(
 id_bebida SERIAL PRIMARY KEY,
 nombre_bebida VARCHAR(40) NOT NULL,
 precio DECIMAL (10,2) NOT NULL,
-descripcion VARCHAR(150) NOT NULL);
+foto varchar (50));
 
 CREATE TABLE alcohol(
 id_alcohol SERIAL PRIMARY KEY,
@@ -65,7 +65,7 @@ CREATE TABLE platillo(
 id_platillo SERIAL PRIMARY KEY,
 nombre_platillo VARCHAR(40) NOT NULL,
 precio DECIMAL (10,2) NOT NULL,
-descripcion VARCHAR(150) NOT NULL);
+foto varchar (50));
 
 CREATE TABLE postre(
 id_postre SERIAL PRIMARY KEY,
