@@ -31,16 +31,19 @@ nombre_cliente VARCHAR(40) NOT NULL);
 CREATE TABLE pedido(
 id_pedido SERIAL PRIMARY KEY,
 id_mesa int,
+id_cliente int NOT NULL,
 costo DECIMAL (10,2) NOT NULL,
 fecha DATE NOT NULL,
 estado VARCHAR(20),
+FOREIGN KEY (id_mesa) REFERENCES mesa (id_mesa)on UPDATE CASCADE,
+FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)on UPDATE CASCADE);
 FOREIGN KEY (id_mesa) REFERENCES mesa (id_mesa)on UPDATE CASCADE);
 
 CREATE TABLE bebida(
 id_bebida SERIAL PRIMARY KEY,
 nombre_bebida VARCHAR(40) NOT NULL,
 precio DECIMAL (10,2) NOT NULL,
-foto varchar (50));
+descripcion varchar (200));
 
 CREATE TABLE alcohol(
 id_alcohol SERIAL PRIMARY KEY,
@@ -63,7 +66,7 @@ CREATE TABLE platillo(
 id_platillo SERIAL PRIMARY KEY,
 nombre_platillo VARCHAR(40) NOT NULL,
 precio DECIMAL (10,2) NOT NULL,
-foto varchar (50));
+descripcion varchar (200));
 
 CREATE TABLE postre(
 id_postre SERIAL PRIMARY KEY,
