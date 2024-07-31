@@ -40,7 +40,7 @@ CREATE TABLE bebida(
 id_bebida SERIAL PRIMARY KEY,
 nombre_bebida VARCHAR(40) NOT NULL,
 precio DECIMAL (10,2) NOT NULL,
-descripcion VARCHAR(150) NOT NULL);
+foto varchar (50));
 
 CREATE TABLE alcohol(
 id_alcohol SERIAL PRIMARY KEY,
@@ -63,7 +63,7 @@ CREATE TABLE platillo(
 id_platillo SERIAL PRIMARY KEY,
 nombre_platillo VARCHAR(40) NOT NULL,
 precio DECIMAL (10,2) NOT NULL,
-descripcion VARCHAR(150) NOT NULL);
+foto varchar (50));
 
 CREATE TABLE postre(
 id_postre SERIAL PRIMARY KEY,
@@ -94,6 +94,7 @@ id_contiene SERIAL PRIMARY KEY,
 id_pedido int NOT NULL,
 id_platillo int,
 cantidad int NOT NULL,
+
 FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido)on UPDATE CASCADE,
 FOREIGN KEY (id_platillo) REFERENCES platillo (id_platillo)on UPDATE CASCADE);
 
