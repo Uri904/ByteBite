@@ -96,6 +96,7 @@ id_contiene SERIAL PRIMARY KEY,
 id_pedido int NOT NULL,
 id_platillo int,
 cantidad int NOT NULL,
+
 FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido)on UPDATE CASCADE,
 FOREIGN KEY (id_platillo) REFERENCES platillo (id_platillo)on UPDATE CASCADE);
 
