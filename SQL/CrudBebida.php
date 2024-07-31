@@ -17,6 +17,8 @@ $statement->bindParam(2,$Bebida->precio);
 $statement->bindParam(3,$Bebida->descripcion);
 
 
+
+
 if($statement->execute()){
     echo"SE REALIZO CON EXITO EL REGISTRO";
     }else{

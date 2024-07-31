@@ -109,7 +109,7 @@ $bebidas = $statement_bebidas->fetchAll(PDO::FETCH_OBJ);
             echo "
             <div class='item'>
                 <span class='titulo-item'>" . htmlspecialchars($bebida->nombre_bebida) . "</span>
-                <img src='../IMG/Menu/bebidas/" . htmlspecialchars($bebida->nombre_bebida) . ".png' alt='' class='img-item'>
+                <img src='../IMG/Menu/bebidas/" . htmlspecialchars($bebida->nombre_bebida) . ".png' alt='' class='bebida-img'>
                 <span class='precio-item'>$" . htmlspecialchars($bebida->precio) . "</span>
                 <form method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>
                     <input type='hidden' name='id_bebida' value='" . htmlspecialchars($bebida->id_bebida) . "'>
